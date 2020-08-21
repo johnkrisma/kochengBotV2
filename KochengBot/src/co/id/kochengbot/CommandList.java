@@ -61,7 +61,9 @@ public class CommandList extends ListenerAdapter {
 					"kawaii\n"+
 					"smash / semes / smesh\n"+
 					"diem / diam\n"+
-					"cayman / cemen");
+					"cayman / cemen\n"+
+					"des\n"+
+					"gatal / gatel\n");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -477,7 +479,21 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "des")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/IVNnHfG.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gatal")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "gatel")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/nbzU6SH.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
