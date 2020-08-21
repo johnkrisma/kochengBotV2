@@ -16,7 +16,7 @@ public class KochengController {
 	//Main
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws LoginException {
-		jda = new JDABuilder(AccountType.BOT).setToken("NjkxNDYwNjA3MDg1Mzc5NjE1.XtO-Xg.VHnv7_TMHkIhOT7-6raHOrDVvs0").build();
+		jda = new JDABuilder(AccountType.BOT).setToken("").build();
 		jda.getPresence().setStatus(OnlineStatus.IDLE);
 		jda.getPresence().setActivity(Activity.playing("with kocheng gendud .list"));
 		jda.addEventListener(new CommandList());
