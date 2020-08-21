@@ -18,13 +18,7 @@ public class KochengController {
 	public static void main(String[] args) throws LoginException {
 		jda = new JDABuilder(AccountType.BOT).setToken("").build();
 		jda.getPresence().setStatus(OnlineStatus.IDLE);
-		jda.getPresence().setActivity(Activity.playing("with kocheng gendud .list"));
+		jda.getPresence().setActivity(Activity.playing(".list"));
 		jda.addEventListener(new CommandList());
-		
-//		JDABuilder builder = new JDABuilder(AccountType.BOT);
-//        String token = "NjkxNDYwNjA3MDg1Mzc5NjE1.XniWWw.qSqhvDWxmWd6N235B3ZssUzkznE";
-//        builder.setToken(token);
-//        builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
-//        builder.build();
 	}
 }
