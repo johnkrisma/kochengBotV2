@@ -63,7 +63,8 @@ public class CommandList extends ListenerAdapter {
 					"diem / diam\n"+
 					"cayman / cemen\n"+
 					"des\n"+
-					"gatal / gatel\n");
+					"gatal / gatel\n"+
+					"coli\n");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -494,6 +495,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "coli")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/TObAH5D.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
