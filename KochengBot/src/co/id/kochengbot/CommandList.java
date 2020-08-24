@@ -66,7 +66,8 @@ public class CommandList extends ListenerAdapter {
 					"gatal / gatel\n"+
 					"coli\n"+
 					"woi\n"+
-					"malam / malem\n");
+					"malam / malem\n"+
+					"astaga / astava / asfava");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -515,6 +516,19 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "malem")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/SaTRIn1.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "astaga")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "astava")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "astafa")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "asfava")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "asfaba")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "asfaga")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "asyaba")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/K780PzO.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
