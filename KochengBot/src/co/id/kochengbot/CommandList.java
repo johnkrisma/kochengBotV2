@@ -67,7 +67,8 @@ public class CommandList extends ListenerAdapter {
 					"coli\n"+
 					"woi\n"+
 					"malam / malem\n"+
-					"astaga / astava / asfava");
+					"astaga / astava / asfava\n"+
+					"cengeng");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -533,7 +534,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "cengeng")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/yHAsUbG.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
