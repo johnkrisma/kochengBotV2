@@ -69,7 +69,10 @@ public class CommandList extends ListenerAdapter {
 					"malam / malem\n"+
 					"astaga / astava / asfava\n"+
 					"cengeng\n"+
-					"pukul / berani\n");
+					"pukul / berani\n"+
+					"saus / sauce / pasal\n"+
+					"kasar / laskar\n"+
+					"pici / pc\n");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -551,6 +554,31 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendMessage(embed.build()).queue();
 			
 			embed.setImage("https://i.imgur.com/U0h925E.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sauce")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "saus")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "pasal")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/qvb7dDI.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "laskar")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "kasar")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/Cg3O3ur.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "pici")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "pc")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/g4iAdJd.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
