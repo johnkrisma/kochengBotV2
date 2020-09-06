@@ -75,7 +75,8 @@ public class CommandList extends ListenerAdapter {
 					"pici / pc\n"+
 					"bokong\n"+
 					"homo\n"+
-					"latom / doa / amin");
+					"latom / doa / amin\n"+
+					"fubuki / fukuki / manual");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -605,6 +606,15 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "amin")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/VGOZg7m.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "fubuki")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "fukuki")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "manual")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/RYaGIq4.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
