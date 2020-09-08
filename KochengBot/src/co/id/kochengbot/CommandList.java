@@ -77,7 +77,8 @@ public class CommandList extends ListenerAdapter {
 					"homo\n"+
 					"latom / doa / amin\n"+
 					"fubuki / fukuki / manual\n"+
-					"jodoh\n");
+					"jodoh\n"+
+					"sarjana / ekonomi\n");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -623,6 +624,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "jodoh")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/ZQH4VqE.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sarjana")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "ekonomi")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/ysXA7Kt.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
