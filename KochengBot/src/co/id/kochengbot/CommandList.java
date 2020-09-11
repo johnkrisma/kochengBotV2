@@ -13,72 +13,73 @@ public class CommandList extends ListenerAdapter {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
-					"welcome\n"+
-					"kocheng\n"+
-					"ok\n"+
-					"test\n"+
-					"meo / memeo\n"+
-					"gakreatif\n"+
-					"sodok\n"+
-					"telanjang / bugil\n"+
-					"rehab / rehabilitas / rebihalitas\n"+
-					"sarapan\n"+
-					"yan jajan / yan / jajan\n"+
-					"woo / pantek\n"+
-					"minta / minta duit / bagi duit\n"+
-					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
-					"ty / thx / thanks\n"+
-					"paansi / apasih / apa sih / paan sih / apaan sih / apasi\n"+
-					"mei / mei kita / mei gue\n"+
-					"jembut / jembud\n"+
-					"cupu / cupi / payah\n"+
-					"lonte / kobte\n"+
-					"lawak\n"+
-					"elit\n"+
-					"mati\n"+
-					"ribut / ribiw\n"+
-					"kontol\n"+
-					"bismillah\n"+
-					"homuking\n"+
-					"ngeyel\n"+
-					"tani / thamngan\n"+
-					"baiwan / bewan / byone\n"+
-					"sange / sangean\n"+
-					"rapsodi\n"+
-					"seno\n"+
-					"tumdur / tidur / bobo\n"+
-					"gesek\n"+
-					"out\n"+
-					"ingat / tobat\n"+
-					"memek\n"+
-					"citacita\n"+
-					"bosan\n"+
-					"ngangkang\n"+
-					"balon / balonku\n"+
-					"nangis\n"+
-					"curang\n"+
-					"ntr\n"+
-					"kawaii\n"+
-					"smash / semes / smesh\n"+
-					"diem / diam\n"+
-					"cayman / cemen\n"+
-					"des\n"+
-					"gatal / gatel\n"+
-					"coli\n"+
-					"woi\n"+
-					"malam / malem\n"+
 					"astaga / astava / asfava\n"+
-					"cengeng\n"+
-					"pukul / berani\n"+
-					"saus / sauce / pasal\n"+
-					"kasar / laskar\n"+
-					"pici / pc\n"+
+					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
+					"baiwan / bewan / byone\n"+
+					"balon / balonku\n"+
+					"bismillah\n"+
 					"bokong\n"+
-					"homo\n"+
-					"latom / doa / amin\n"+
+					"bosan\n"+
+					"cayman / cemen\n"+
+					"cengeng\n"+
+					"citacita\n"+
+					"coli\n"+
+					"cupu / cupi / payah\n"+
+					"curang\n"+
+					"des\n"+
+					"diem / diam\n"+
+					"elit\n"+
 					"fubuki / fukuki / manual\n"+
+					"gakreatif\n"+
+					"gatal / gatel\n"+
+					"gesek\n"+
+					"homo\n"+
+					"homuking\n"+
+					"ingat / tobat\n"+
+					"jembut / jembud\n"+
 					"jodoh\n"+
-					"sarjana / ekonomi\n");
+					"kasar / laskar\n"+
+					"kawaii\n"+
+					"kocheng\n"+
+					"kontol\n"+
+					"latom / doa / amin\n"+
+					"lawak\n"+
+					"lonte / kobte\n"+
+					"malam / malem\n"+
+					"mati\n"+
+					"mei / mei kita / mei gue\n"+
+					"memek\n"+
+					"meo / memeo\n"+
+					"minta / minta duit / bagi duit\n"+
+					"nangis\n"+
+					"ngangkang\n"+
+					"ngeyel\n"+
+					"ntr\n"+
+					"ok\n"+
+					"out\n"+
+					"paansi / apasih / apa sih / paan sih / apaan sih / apasi\n"+
+					"pici / pc\n"+
+					"pukul / berani\n"+
+					"rapsodi\n"+
+					"rehab / rehabilitas / rebihalitas\n"+
+					"ribut / ribiw\n"+
+					"sange / sangean\n"+
+					"sarapan\n"+
+					"sarjana / ekonomi\n"+
+					"saus / sauce / pasal\n"+
+					"seno\n"+
+					"smash / semes / smesh\n"+
+					"sodok\n"+
+					"tani / thamngan\n"+
+					"telanjang / bugil\n"+
+					"test\n"+
+					"tumdur / tidur / bobo\n"+
+					"ty / thx / thanks\n"+
+					"welcome\n"+
+					"woi\n"+
+					"woo / pantek\n"+
+					"yan jajan / yan / jajan\n"
+);
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
