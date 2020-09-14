@@ -74,6 +74,7 @@ public class CommandList extends ListenerAdapter {
 					"tani / thamngan\n"+
 					"telanjang / bugil\n"+
 					"test\n"+
+					"tomay / tomat\n"+
 					"tumdur / tidur / bobo\n"+
 					"ty / thx / thanks\n"+
 					"welcome\n"+
@@ -647,7 +648,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "tomay")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "tomat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/L7VBJ8o.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
