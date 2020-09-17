@@ -53,6 +53,7 @@ public class CommandList extends ListenerAdapter {
 					"meo / memeo\n"+
 					"minta / minta duit / bagi duit\n"+
 					"nangis\n"+
+					"nabung\n"+
 					"ngangkang\n"+
 					"ngeyel\n"+
 					"ntr\n"+
@@ -656,6 +657,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "nabung")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/93vMbPt.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
