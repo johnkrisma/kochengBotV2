@@ -59,7 +59,8 @@ public class CommandList extends ListenerAdapter {
 					"ntr\n"+
 					"ok\n"+
 					"out\n"+
-					"paansi / apasih / apa sih / paan sih / apaan sih / apasi\n"+
+					"paansi / apasih / apasih / paansih / apaansih / apasi\n"+
+					"pagi\n"+
 					"pici / pc\n"+
 					"pukul / berani\n"+
 					"rapsodi\n"+
@@ -213,9 +214,9 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "apasih")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "paansi")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "apa sih")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "paan sih")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "apaan sih")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "apasih")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "paansih")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "apaansih")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "apasi")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/PRECnxp.jpg");
@@ -669,6 +670,13 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "aturan")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/XQzl6xr.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "pagi")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/stlnppa.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
