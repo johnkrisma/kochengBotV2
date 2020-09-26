@@ -84,7 +84,8 @@ public class CommandList extends ListenerAdapter {
 					"welcome\n"+
 					"woi\n"+
 					"woo / pantek\n"+
-					"yan jajan / yan / jajan\n"
+					"yan jajan / yan / jajan\n"+
+					"yes\n"
 					);
 			
 			event.getChannel().sendTyping().queue();
@@ -690,7 +691,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "yes")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/7v81o2C.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
