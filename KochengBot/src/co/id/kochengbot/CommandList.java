@@ -43,6 +43,7 @@ public class CommandList extends ListenerAdapter {
 					"kawaii\n"+
 					"kocheng\n"+
 					"kontol\n"+
+					"kuota\n"+
 					"latom / doa / amin\n"+
 					"lawak\n"+
 					"lonte / kobte\n"+
@@ -698,6 +699,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kuota")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/LUCMJjI.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
