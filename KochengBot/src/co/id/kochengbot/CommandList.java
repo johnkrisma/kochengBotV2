@@ -34,13 +34,14 @@ public class CommandList extends ListenerAdapter {
 					"gatal / gatel\n"+
 					"gesek\n"+
 					"goblog / goblok / hiu\n"+
+					"hamil\n"+
 					"homo\n"+
 					"homuking\n"+
 					"ingat / tobat\n"+
 					"jembut / jembud\n"+
 					"jodoh\n"+
 					"kasar / laskar\n"+
-					"kawaii\n"+
+					"kawaii / kawai\n"+
 					"kocheng\n"+
 					"kontol\n"+
 					"kuota\n"+
@@ -471,7 +472,8 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "kawaii")) {
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kawaii")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "kawai")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/wWZbPN5.png");
 			
@@ -706,7 +708,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hamil")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/rwStWn1.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
