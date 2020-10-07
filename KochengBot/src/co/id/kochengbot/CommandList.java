@@ -484,7 +484,7 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "semes")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "smesh")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/RFo7Pw3.jpg");
+			embed.setImage("https://i.imgur.com/pBzrBEn.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
