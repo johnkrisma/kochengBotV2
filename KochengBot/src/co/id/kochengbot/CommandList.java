@@ -17,6 +17,7 @@ public class CommandList extends ListenerAdapter {
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
+					"biadam\n"+
 					"bismillah\n"+
 					"bokong\n"+
 					"bosan\n"+
@@ -720,6 +721,13 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "kunus")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/PA9sGAi.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "biadam")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/TrJzcPj.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
