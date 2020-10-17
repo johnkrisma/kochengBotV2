@@ -38,6 +38,7 @@ public class CommandList extends ListenerAdapter {
 					"gesek\n"+
 					"goblog / goblok / hiu\n"+
 					"hamil\n"+
+					"hantu\n"+
 					"homo\n"+
 					"homuking\n"+
 					"ingat / tobat\n"+
@@ -748,6 +749,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hantu")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/dk6b6ak.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
