@@ -31,6 +31,7 @@ public class CommandList extends ListenerAdapter {
 					"des\n"+
 					"diem / diam\n"+
 					"elit\n"+
+					"emek\n"+
 					"fubuki / fukuki / manual\n"+
 					"gakreatif\n"+
 					"gatal / gatel\n"+
@@ -740,7 +741,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "emek")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/vJnY6LS.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
