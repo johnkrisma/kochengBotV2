@@ -83,6 +83,7 @@ public class CommandList extends ListenerAdapter {
 					"taat / aturan\n"+
 					"tani / thamngan\n"+
 					"telanjang / bugil\n"+
+					"terhura / terharu\n"+
 					"test\n"+
 					"tomay / tomat\n"+
 					"toxic / toksik\n"+
@@ -752,6 +753,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "hantu")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/dk6b6ak.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "terhura")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "terharu")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/cSdTyIX.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
