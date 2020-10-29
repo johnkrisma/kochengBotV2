@@ -46,6 +46,7 @@ public class CommandList extends ListenerAdapter {
 					"jodoh\n"+
 					"kasar / laskar\n"+
 					"kawaii / kawai\n"+
+					"keqing\n"+
 					"kocheng\n"+
 					"kontol\n"+
 					"kubus / kunus\n"+
@@ -765,7 +766,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "keqing")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/oWIximk.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
