@@ -71,6 +71,7 @@ public class CommandList extends ListenerAdapter {
 					"pagi\n"+
 					"pici / pc\n"+
 					"pukul / berani\n"+
+					"qiqi\n"+
 					"rapsodi\n"+
 					"rehab / rehabilitas / rebihalitas\n"+
 					"ribut / ribiw\n"+
@@ -778,7 +779,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "qiqi")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/oRjyTck.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
