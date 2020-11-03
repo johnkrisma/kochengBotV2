@@ -22,6 +22,7 @@ public class CommandList extends ListenerAdapter {
 					"bismillah\n"+
 					"bokong\n"+
 					"bosan\n"+
+					"capek\n"+
 					"cayman / cemen\n"+
 					"cengeng\n"+
 					"citacita\n"+
@@ -791,6 +792,13 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "gender")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/BGogDHX.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "capek")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/oYtmhXI.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
