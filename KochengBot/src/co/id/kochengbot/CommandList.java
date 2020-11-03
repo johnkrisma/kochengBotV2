@@ -32,6 +32,7 @@ public class CommandList extends ListenerAdapter {
 					"diem / diam\n"+
 					"elit\n"+
 					"emek\n"+
+					"fendet / gender\n"+
 					"fubuki / fukuki / manual\n"+
 					"gakreatif\n"+
 					"gatal / gatel\n"+
@@ -782,6 +783,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "qiqi")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/oRjyTck.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "fendet")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "gender")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/BGogDHX.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
