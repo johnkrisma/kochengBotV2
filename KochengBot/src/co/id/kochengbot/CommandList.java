@@ -85,6 +85,7 @@ public class CommandList extends ListenerAdapter {
 					"smash / semes / smesh\n"+
 					"sodok\n"+
 					"taat / aturan\n"+
+					"takut\n"+
 					"tani / thamngan\n"+
 					"telanjang / bugil\n"+
 					"terhura / terharu\n"+
@@ -799,6 +800,18 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "capek")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/oYtmhXI.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "takut")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/oqasY19.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://i.imgur.com/w25l9bX.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
