@@ -55,6 +55,7 @@ public class CommandList extends ListenerAdapter {
 					"kontol\n"+
 					"kubus / kunus\n"+
 					"kuota\n"+
+					"lah / ngatur\n"+
 					"latom / doa / amin\n"+
 					"lawak\n"+
 					"lonte / kobte\n"+
@@ -836,6 +837,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "mulai")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/7qCr48S.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "lah")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "ngatur")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/qwSuqo8.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
