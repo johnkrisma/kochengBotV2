@@ -65,6 +65,7 @@ public class CommandList extends ListenerAdapter {
 					"memek\n"+
 					"meo / memeo\n"+
 					"minta / minta duit / bagi duit\n"+
+					"monthly / monly\n"+
 					"mulai\n"+
 					"nangis\n"+
 					"nabung\n"+
@@ -845,6 +846,14 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "ngatur")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/qwSuqo8.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "monthly")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "monly")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/Lsc5npu.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
