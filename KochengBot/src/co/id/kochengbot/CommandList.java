@@ -795,7 +795,7 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 			
-			embed.setImage("https://i.imgur.com/BGogDHX.png");
+			embed.setImage("https://i.imgur.com/dPuVDJY.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
