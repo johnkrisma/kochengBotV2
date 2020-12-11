@@ -30,6 +30,7 @@ public class CommandList extends ListenerAdapter {
 					"crot\n"+
 					"cupu / cupi / payah\n"+
 					"curang\n"+
+					"dokter\n"+
 					"des\n"+
 					"diem / diam\n"+
 					"elit\n"+
@@ -854,6 +855,13 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "monly")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/Lsc5npu.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "dokter")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/f10pqB9.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
