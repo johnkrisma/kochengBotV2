@@ -794,6 +794,11 @@ public class CommandList extends ListenerAdapter {
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://i.imgur.com/BGogDHX.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "fendet")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "gender")) {
