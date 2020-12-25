@@ -75,6 +75,7 @@ public class CommandList extends ListenerAdapter {
 					"ngangkang\n"+
 					"ngeyel\n"+
 					"ntr\n"+
+					"off / ngambek\n"+
 					"ok\n"+
 					"out\n"+
 					"paansi / apasih / apasih / paansih / apaansih / apasi\n"+
@@ -883,6 +884,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "laksek")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/RkwVqZN.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "off")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "ngambek")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/jccJxZH.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
