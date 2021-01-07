@@ -91,6 +91,7 @@ public class CommandList extends ListenerAdapter {
 					"sarapan\n"+
 					"sarjana / ekonomi\n"+
 					"saus / sauce / pasal\n"+
+					"segar\n"+
 					"seno\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
@@ -900,6 +901,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "ketua")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/CGBZ7Cd.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "segar")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/bVAAE6z.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
