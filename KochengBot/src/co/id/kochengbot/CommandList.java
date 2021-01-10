@@ -41,6 +41,7 @@ public class CommandList extends ListenerAdapter {
 					"gatal / gatel\n"+
 					"gesek\n"+
 					"goblog / goblok / hiu\n"+
+					"hak\n"+
 					"hamil\n"+
 					"hantu\n"+
 					"homo\n"+
@@ -908,6 +909,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "segar")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/bVAAE6z.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hak")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/omKfthb.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
