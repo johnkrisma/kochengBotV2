@@ -79,7 +79,7 @@ public class CommandList extends ListenerAdapter {
 					"ntr\n"+
 					"off / ngambek\n"+
 					"ok\n"+
-					"out\n"+
+					"out / pelatih / pelatuh\n"+
 					"paansi / apasih / apasih / paansih / apaansih / apasi\n"+
 					"pagi\n"+
 					"pici / pc\n"+
@@ -411,7 +411,9 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "out")) {
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "out")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "pelatih")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "pelatuh")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/CGZCIj9.jpg");
 			
