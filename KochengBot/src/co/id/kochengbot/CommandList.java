@@ -75,6 +75,7 @@ public class CommandList extends ListenerAdapter {
 					"mulai\n"+
 					"nangis\n"+
 					"nabung\n"+
+					"nasgor\n"+
 					"ngangkang\n"+
 					"ngeyel\n"+
 					"ntr\n"+
@@ -930,6 +931,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "nasgor")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/8H2mvQt.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
