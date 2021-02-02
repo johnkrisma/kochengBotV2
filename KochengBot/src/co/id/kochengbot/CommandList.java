@@ -38,6 +38,7 @@ public class CommandList extends ListenerAdapter {
 					"emek\n"+
 					"fendet / gender\n"+
 					"fubuki / fukuki / manual\n"+
+					"gaguna"+
 					"gakreatif\n"+
 					"gatal / gatel\n"+
 					"gesek\n"+
@@ -938,7 +939,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gaguna")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/1Ymuesg.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
