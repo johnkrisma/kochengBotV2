@@ -34,6 +34,7 @@ public class CommandList extends ListenerAdapter {
 					"dokter\n"+
 					"des\n"+
 					"diem / diam\n"+
+					"dildo\n"+
 					"elit\n"+
 					"emek\n"+
 					"fendet / gender\n"+
@@ -974,6 +975,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "geh")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/GNE5YLZ.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "dildo")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/rYYtJte.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
