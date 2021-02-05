@@ -79,6 +79,7 @@ public class CommandList extends ListenerAdapter {
 					"nasgor\n"+
 					"ngangkang\n"+
 					"ngeyel\n"+
+					"ngontol\n"+
 					"ntr\n"+
 					"off / ngambek\n"+
 					"ok\n"+
@@ -96,6 +97,7 @@ public class CommandList extends ListenerAdapter {
 					"sarjana / ekonomi\n"+
 					"saus / sauce / pasal\n"+
 					"segar\n"+
+					"selaw\n"+
 					"seno\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
@@ -946,6 +948,21 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ngontol")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/tskBuZZ.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "selaw")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/lHpz4Nw.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
