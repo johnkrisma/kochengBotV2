@@ -108,6 +108,7 @@ public class CommandList extends ListenerAdapter {
 					"takut\n"+
 					"tani / thamngan\n"+
 					"telanjang / bugil\n"+
+					"telat\n"+
 					"terhura / terharu\n"+
 					"test\n"+
 					"tomay / tomat\n"+
@@ -982,6 +983,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "dildo")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/rYYtJte.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "telat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/BHNfKRD.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
