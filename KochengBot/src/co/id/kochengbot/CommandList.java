@@ -43,6 +43,7 @@ public class CommandList extends ListenerAdapter {
 					"gaguna"+
 					"gakreatif\n"+
 					"gatal / gatel\n"+
+					"gay\n"+
 					"geh\n"+
 					"gesek\n"+
 					"goblog / goblok / hiu\n"+
@@ -91,6 +92,7 @@ public class CommandList extends ListenerAdapter {
 					"out / pelatih / pelatuh\n"+
 					"paansi / apasih / apasih / paansih / apaansih / apasi\n"+
 					"pagi\n"+
+					"percaya\n"+
 					"pici / pc\n"+
 					"pukul / berani\n"+
 					"qiqi\n"+
@@ -1013,6 +1015,21 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "percaya")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/EftsvvN.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gay")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/NdUovXI.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
