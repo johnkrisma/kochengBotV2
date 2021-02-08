@@ -13,6 +13,7 @@ public class CommandList extends ListenerAdapter {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
+					"achievement / achivmen / acivmen / acimen\n"+
 					"astaga / astava / asfava\n"+
 					"ampas\n"+
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
@@ -1002,7 +1003,16 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "achievement")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "achivmen")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "acivmen")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "acimen")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/smNRG6C.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
