@@ -81,6 +81,7 @@ public class CommandList extends ListenerAdapter {
 					"nabung\n"+
 					"nasgor\n"+
 					"ngangkang\n"+
+					"ngeri\n"+
 					"ngeyel\n"+
 					"ngontol\n"+
 					"ntr\n"+
@@ -990,6 +991,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "telat")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/BHNfKRD.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ngeri")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/92Mcvo9.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
