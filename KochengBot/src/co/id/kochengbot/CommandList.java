@@ -108,6 +108,7 @@ public class CommandList extends ListenerAdapter {
 					"seno\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
+					"sunat\n"+
 					"taat / aturan\n"+
 					"takut\n"+
 					"tani / thamngan\n"+
@@ -1025,6 +1026,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "gay")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/NdUovXI.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sunat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/wNPVnCW.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
