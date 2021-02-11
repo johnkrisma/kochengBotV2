@@ -52,6 +52,7 @@ public class CommandList extends ListenerAdapter {
 					"hantu\n"+
 					"homo\n"+
 					"homuking\n"+
+					"hujat\n"+
 					"ingat / tobat\n"+
 					"jembut / jembud\n"+
 					"jodoh\n"+
@@ -1037,7 +1038,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hujat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/7dmL3sr.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
