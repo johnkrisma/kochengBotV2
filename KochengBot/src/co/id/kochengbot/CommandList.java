@@ -16,6 +16,7 @@ public class CommandList extends ListenerAdapter {
 					"achievement / achivmen / acivmen / acimen\n"+
 					"astaga / astava / asfava\n"+
 					"ampas\n"+
+					"ayaka / pride\n"+
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
@@ -1054,7 +1055,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ayaka")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "pride")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/Pe19qZN.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
