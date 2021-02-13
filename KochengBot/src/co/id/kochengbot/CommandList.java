@@ -119,6 +119,7 @@ public class CommandList extends ListenerAdapter {
 					"test\n"+
 					"tomay / tomat\n"+
 					"toxic / toksik\n"+
+					"tt / tete\n"+
 					"tumdur / tidur / bobo\n"+
 					"ty / thx / thanks\n"+
 					"welcome\n"+
@@ -1045,6 +1046,15 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "tt")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "tete")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/HkiIiKe.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
