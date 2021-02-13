@@ -55,6 +55,7 @@ public class CommandList extends ListenerAdapter {
 					"homuking\n"+
 					"hujat\n"+
 					"ingat / tobat\n"+
+					"jaog / jago / ampun / seram/ sram / sramz\n"+
 					"jembut / jembud\n"+
 					"jodoh\n"+
 					"kasar / laskar\n"+
@@ -1059,6 +1060,18 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "pride")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/Pe19qZN.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "jaog")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "jago")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "ampun")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "seram")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "sram")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "sramz")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/GAqDlvU.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
