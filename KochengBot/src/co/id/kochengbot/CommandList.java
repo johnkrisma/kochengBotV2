@@ -77,6 +77,7 @@ public class CommandList extends ListenerAdapter {
 					"malam / malem\n"+
 					"mati\n"+
 					"mei / mei kita / mei gue\n"+
+					"melas\n"+
 					"memek\n"+
 					"meo / memeo\n"+
 					"minta / minta duit / bagi duit\n"+
@@ -115,6 +116,7 @@ public class CommandList extends ListenerAdapter {
 					"taat / aturan\n"+
 					"takut\n"+
 					"tani / thamngan\n"+
+					"tau\n"+
 					"telanjang / bugil\n"+
 					"telat\n"+
 					"terhura / terharu\n"+
@@ -1072,6 +1074,20 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "sramz")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/GAqDlvU.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "melas")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/gS5jX8f.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "tau")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/OSRIKRh.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
