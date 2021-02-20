@@ -102,6 +102,7 @@ public class CommandList extends ListenerAdapter {
 					"qiqi\n"+
 					"rapsodi\n"+
 					"rehab / rehabilitas / rebihalitas\n"+
+					"retry / tetty\n"+
 					"ribut / ribiw\n"+
 					"sange / sangean\n"+
 					"sarapan\n"+
@@ -1088,6 +1089,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "tau")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/OSRIKRh.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "retry")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "tetty")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://i.imgur.com/sIRFGVb.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
