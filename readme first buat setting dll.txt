@@ -17,3 +17,4 @@ kalian bisa ikutin contoh command list lain.
 6. visit https://github.com/DV8FromTheWorld/JDA/wiki/2%29-Eclipse-Setup lihat bagian jar setup, ikutin langkahnya
 7. pasang JDA di properties > java build path > external jar > JDA with dependencies > apply
 8. export > java > runnable jar > configurations: KochengController > select folder, mau diexport kemana file kochengbot nya
+9. bilang bilang ke yg buat kalo mau ada perubahan ya
