@@ -80,7 +80,7 @@ public class CommandList extends ListenerAdapter {
 					"melas\n"+
 					"memek\n"+
 					"meo / memeo\n"+
-					"minta / minta duit / bagi duit\n"+
+					"minta / bagi\n"+
 					"monthly / monly\n"+
 					"mulai\n"+
 					"nangis\n"+
@@ -130,7 +130,7 @@ public class CommandList extends ListenerAdapter {
 					"welcome\n"+
 					"woi\n"+
 					"woo / pantek\n"+
-					"yan jajan / yan / jajan\n"+
+					"yan / jajan\n"+
 					"yes\n"
 					);
 			
@@ -173,14 +173,14 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "gakreatif")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/FrIUGyf.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957343016157194/ga_kreatif.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "sodok")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/ZWi3mNn.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957477553438760/sogok.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -188,31 +188,31 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "telanjang")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "bugil")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/mf84I8Z.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957484989415454/telanjang.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "sarapan")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/xKxEJOd.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957467121549362/sarapan.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "rehab") || args[0].equalsIgnoreCase(KochengController.prefix + "rehabilitas")
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "rehab")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "rehabilitas")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "rebihalitas")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/aOcfV26.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957436440215592/rehab.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "yan jajan")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "yan")
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "yan")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "jajan")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/cjfl6hi.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957356258361344/jajan.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -225,11 +225,10 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "minta duit")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "bagi duit")
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "bagi")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "minta")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/Al3U0TX.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957408447037440/minta_duid.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -241,12 +240,12 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "vagot")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "bagot")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/wYIWXly.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957291908562944/bacot.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 			
-			embed.setImage("https://i.imgur.com/NkAuRPz.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957290881482782/bacot_2.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -255,7 +254,7 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "thx")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "thanks")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/0xqwFvT.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957499119763456/ty.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -267,7 +266,7 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "apaansih")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "apasi")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/PRECnxp.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957426470486046/paansi.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -276,7 +275,7 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "mei kita")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "mei gue")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/ieyrYKa.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957397399240704/mei.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -284,7 +283,7 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "jembut")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "jembud")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/bux9VXB.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957358245806130/jembut.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -302,30 +301,28 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "lonte")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "kobte")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/Ha6P7Qi.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957378794225674/kobte.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "lawak")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/LMjkItp.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957289261694986/11741727946472.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
-		
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "elit")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/PTBn5Ay.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957340755951636/elit.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "mati")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/QaInxHx.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957392114548736/mati.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -333,19 +330,19 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "ribut")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "ribiw")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/cunu6Hr.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957282819375124/11702893809638.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 			
-			embed.setImage("https://i.imgur.com/ndoGAaC.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957285911494666/11702893817986.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "kontol")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/GbqSIL0.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957373341368419/kontlo.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -353,26 +350,26 @@ public class CommandList extends ListenerAdapter {
 		
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "bismillah")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/b5z1rqW.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957293494403113/bismilah.jpeg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "homuking")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/UvCtWwp.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957349038784512/homuking_2.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 			
-			embed.setImage("https://i.imgur.com/J6JuOkw.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957353615425546/homuking.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "ngeyel")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/OBbKltI.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957415305773056/ngeyel.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -380,7 +377,7 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "tani")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "thamngan")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/a8lVMOj.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957489967661076/thamngan.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -397,21 +394,21 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "sange")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "sangean")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/Vum1yyp.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957461953773568/sange.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "rapsodi")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/iwxK3ah.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957431410851850/rapsodi.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "seno")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/X3ByBLJ.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957478106300476/seno.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -420,14 +417,14 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "tidur")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "bobo")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/xZVDMGE.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957494514024488/tumdur.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "gesek")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/asvEKmh.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957346434252800/gesek.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -436,19 +433,14 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "pelatih")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "pelatuh")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/CGZCIj9.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957420481019914/out.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "welcome")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/pSrWUjD.png");
-			
-			event.getChannel().sendTyping().queue();
-			event.getChannel().sendMessage(embed.build()).queue();
-			
-			embed.setImage("https://i.imgur.com/9Qvo2Ho.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957504266436618/welcome.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -456,14 +448,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "ingat")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "tobat")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/DyG3l2e.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957354039574548/ingat.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "memek")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/tuowpQR.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957287538360320/11702899958933.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -538,7 +530,7 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "diam")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "diem")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/drZn5yD.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957329280335912/diem.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -546,7 +538,7 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "cemen")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "cayman")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/YG6LLcC.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957295880699924/cayman_-_edit.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -664,7 +656,7 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "doa")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "amin")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/VGOZg7m.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957385693724692/latom.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
