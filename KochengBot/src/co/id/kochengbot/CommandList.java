@@ -43,6 +43,7 @@ public class CommandList extends ListenerAdapter {
 					"fubuki / fukuki / manual\n"+
 					"gaguna"+
 					"gakreatif\n"+
+					"gangbang\n"+
 					"gatal / gatel\n"+
 					"gay\n"+
 					"geh\n"+
@@ -1093,6 +1094,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gangbang")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/813786373168300112/gangbang.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
