@@ -56,6 +56,7 @@ public class CommandList extends ListenerAdapter {
 					"homuking\n"+
 					"hujat\n"+
 					"ingat / tobat\n"+
+					"isep\n"+
 					"jaog / jago / ampun / seram/ sram / sramz\n"+
 					"jembut / jembud\n"+
 					"jodoh\n"+
@@ -1101,7 +1102,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "isep")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/815482469054152765/isep.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
