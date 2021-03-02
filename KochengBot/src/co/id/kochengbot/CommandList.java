@@ -17,13 +17,16 @@ public class CommandList extends ListenerAdapter {
 					"astaga / astava / asfava\n"+
 					"ampas\n"+
 					"ayaka / pride\n"+
+					"babi\n"+
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
 					"biadam\n"+
 					"bismillah\n"+
 					"bokong\n"+
+					"bomat / gapeduli\n"+
 					"bosan\n"+
+					"canda\n"+
 					"capek\n"+
 					"cayman / cemen\n"+
 					"cengeng\n"+
@@ -33,12 +36,14 @@ public class CommandList extends ListenerAdapter {
 					"cupu / cupi / payah\n"+
 					"curang\n"+
 					"curhat\n"+
+					"damai\n"+
 					"dokter\n"+
 					"des\n"+
 					"diem / diam\n"+
 					"dildo\n"+
 					"elit\n"+
 					"emek\n"+
+					"faisal\n"+
 					"fendet / gender\n"+
 					"fubuki / fukuki / manual\n"+
 					"gaguna"+
@@ -52,13 +57,20 @@ public class CommandList extends ListenerAdapter {
 					"hak\n"+
 					"hamil\n"+
 					"hantu\n"+
+					"hdmi\n"+
+					"hode\n"+
+					"homa / atlas\n"+
 					"homo\n"+
 					"homuking\n"+
 					"hujat\n"+
+					"ijo\n"+
 					"ingat / tobat\n"+
 					"isep\n"+
+					"janji\n"+
 					"jaog / jago / ampun / seram/ sram / sramz\n"+
 					"jembut / jembud\n"+
+					"jijik\n"+
+					"jiwan\n"+
 					"jodoh\n"+
 					"kasar / laskar\n"+
 					"kawaii / kawai\n"+
@@ -93,13 +105,18 @@ public class CommandList extends ListenerAdapter {
 					"ngeyel\n"+
 					"ngontol\n"+
 					"ntr\n"+
+					"nyimak\n"+
 					"off / ngambek\n"+
 					"ok\n"+
+					"om\n"+
 					"out / pelatih / pelatuh\n"+
 					"paansi / apasih / apasih / paansih / apaansih / apasi\n"+
 					"pagi\n"+
+					"pece\n"+
+					"pekok\n"+
 					"percaya\n"+
 					"pici / pc\n"+
+					"ps5\n"+
 					"pukul / berani\n"+
 					"qiqi\n"+
 					"rapsodi\n"+
@@ -113,8 +130,11 @@ public class CommandList extends ListenerAdapter {
 					"segar\n"+
 					"selaw\n"+
 					"seno\n"+
+					"sesat\n"+
+					"simpone\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
+					"summon / cium\n"+
 					"sunat\n"+
 					"taat / aturan\n"+
 					"takut\n"+
@@ -126,6 +146,7 @@ public class CommandList extends ListenerAdapter {
 					"test\n"+
 					"tomay / tomat\n"+
 					"toxic / toksik\n"+
+					"track / ip\n"+
 					"tt / tete\n"+
 					"tumdur / tidur / bobo\n"+
 					"ty / thx / thanks\n"+
@@ -458,6 +479,11 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "memek")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957287538360320/11702899958933.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816304978536038521/tuowpQR.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -1109,6 +1135,180 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "homa")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "atlas")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816280699661058068/tmp_1614686874600.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "janji")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816281484356616202/1765.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "track")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "ip")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816281492853489685/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816282386584698880/image0.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "faisal")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816282025035038741/1614586954843.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "jiwan")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816282336614285333/image0.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "summon")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "cium")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816283024748314644/IMG_20210302_191658.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();			
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "jijik")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816283236950736906/image0.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816298396326821888/IMG_20210302_201811.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "pekok")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816284996070932510/1614687894237.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sesat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816286590497194034/20210302_193058.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "nyimak")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816290405904809984/IMG_20210302_194617.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "simpone")) {
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage("Buruan, panggil gue SIMP, ato BAPERAN. ini MURNI PERASAAN GUE. Gue pengen genjot bareng mbak jiwan. Ini seriusan, suaranya yang imut, mukanya yang cantik, apalagi badannya yang aduhai ningkatin gairah gue buat genjot mbak jiwan. Setiap lapisan kulitnya pengen gue jilat. Saat gue mau crot, gue bakal moncrot sepenuh hati, bisa di perut, muka, badan, teteknya, sampai lubang burit pun bakal gue crot sampai puncak klimaks. Gue bakal meluk dia abis gue moncrot, lalu nanya gimana kabarnya, ngrasain enggas bareng saat telanjang. Dia bakal bilang kalau genjotan gue mantep dan nyatain perasaannya ke gue, bilang kalo dia cinta ama gue. Gue bakal bilang balik seberapa gue cinta ama dia, dan dia bakal kecup gue di pipi. Terus kita ganti pakaian dan ngabisin waktu nonton film, sambil pelukan ama makan hidangan favorit. Gue mau mbak jiwan jadi pacar, pasangan, istri, dan idup gue. Gue cinta dia dan ingin dia jadi bagian tubuh gue. Lo kira ini copypasta? Kagak cok. Gue ngetik tiap kata nyatain prasaan gue. Setiap kali elo nanya dia siapa, denger ini baik-baik : DIA ISTRI GUE. Gue sayang mbak jiwan, dan INI MURNI PIKIRAN DAN PERASAAN GUE.\n---Reaux").queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hode")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816294027610816532/IMG_20210302_200045.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ijo")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816295784558886942/IMG_20200903_221330.JPG");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816295784709357618/IMG_20200914_205740.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "damai")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816295661833551923/IMG_20210302_200058.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816295662017839114/IMG_20210302_200257.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "canda")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816295627696373770/IMG_20210302_200655.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ps5")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816299256439635988/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816299905085079612/IMG_20210302_202406.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hdmi")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/816300441687556096/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "pece")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816301885816438784/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "babi")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816302066062327828/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "om")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816302241975107604/image0.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gapeduli")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "bomat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816303633414488125/nobodycares.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
