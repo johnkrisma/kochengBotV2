@@ -115,6 +115,7 @@ public class CommandList extends ListenerAdapter {
 					"pece\n"+
 					"pekok\n"+
 					"percaya\n"+
+					"pervert / perv"+
 					"pici / pc\n"+
 					"ps5\n"+
 					"pukul / berani\n"+
@@ -1318,6 +1319,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendMessage(embed.build()).queue();
 			
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816606968059002880/IMG_20210303_164358.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "pervert")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "perv")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/817224265181954078/IMG_20210305_093616.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
