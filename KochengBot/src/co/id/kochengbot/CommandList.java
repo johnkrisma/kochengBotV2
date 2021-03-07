@@ -16,6 +16,7 @@ public class CommandList extends ListenerAdapter {
 					"achievement / achivmen / acivmen / acimen\n"+
 					"astaga / astava / asfava\n"+
 					"ampas\n"+
+					"atitut\n"+
 					"ayaka / pride\n"+
 					"babi\n"+
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
@@ -1327,6 +1328,13 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "perv")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/817224265181954078/IMG_20210305_093616.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "atitut")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/818175381147222036/PicsArt_03-08-12.34.22.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
