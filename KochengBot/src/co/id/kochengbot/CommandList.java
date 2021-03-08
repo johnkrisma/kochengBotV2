@@ -22,6 +22,7 @@ public class CommandList extends ListenerAdapter {
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
+					"barbara / barabata / bandara\n"+
 					"biadam\n"+
 					"bismillah\n"+
 					"bokong\n"+
@@ -31,6 +32,7 @@ public class CommandList extends ListenerAdapter {
 					"capek\n"+
 					"cayman / cemen\n"+
 					"cengeng\n"+
+					"chongyun / chong\n"+
 					"citacita\n"+
 					"coli\n"+
 					"crot\n"+
@@ -53,6 +55,7 @@ public class CommandList extends ListenerAdapter {
 					"gatal / gatel\n"+
 					"gay\n"+
 					"geh\n"+
+					"gei\n"+
 					"gesek\n"+
 					"goblog / goblok / hiu\n"+
 					"hak\n"+
@@ -1335,6 +1338,30 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "atitut")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/818175381147222036/PicsArt_03-08-12.34.22.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "bandara")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "barbara")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "barabata")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/818306161387372554/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gei")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/818461450599137330/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "chongyun")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "chong")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/818466143232458762/Screenshot_20210308-194845_Discord.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
