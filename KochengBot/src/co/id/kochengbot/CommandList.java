@@ -97,6 +97,7 @@ public class CommandList extends ListenerAdapter {
 					"mei / mei kita / mei gue\n"+
 					"melas\n"+
 					"memek\n"+
+					"mention\n"+
 					"meo / memeo\n"+
 					"minta / bagi\n"+
 					"monthly / monly\n"+
@@ -1387,6 +1388,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "tetawat")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373978248249414/819085778167922698/Screenshot_20210310-125332_LINE.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "mention")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819087117341949962/image0.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
