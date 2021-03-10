@@ -16,6 +16,7 @@ public class CommandList extends ListenerAdapter {
 					"achievement / achivmen / acivmen / acimen\n"+
 					"astaga / astava / asfava\n"+
 					"ampas\n"+
+					"araara\n"+
 					"atitut\n"+
 					"ayaka / pride\n"+
 					"babi\n"+
@@ -110,6 +111,7 @@ public class CommandList extends ListenerAdapter {
 					"ngeyel\n"+
 					"ngontol\n"+
 					"ntr\n"+
+					"nyambung\n"+
 					"nyimak\n"+
 					"off / ngambek\n"+
 					"ok\n"+
@@ -1330,6 +1332,11 @@ public class CommandList extends ListenerAdapter {
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819093367865737226/Screenshot_20210310-132430_Discord.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "pervert")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "perv")) {
@@ -1395,6 +1402,25 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "mention")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819087117341949962/image0.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "araara")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819091558015565854/Screenshot_20210309-111244_Discord.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819091558191202324/Screenshot_20210309-111341_Discord.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "nyambung")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819094092616957972/Screenshot_20210310-132721_Discord.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
