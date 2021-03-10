@@ -62,6 +62,7 @@ public class CommandList extends ListenerAdapter {
 					"hak\n"+
 					"hamil\n"+
 					"hantu\n"+
+					"harem\n"+
 					"hdmi\n"+
 					"hode\n"+
 					"homa / atlas\n"+
@@ -1307,7 +1308,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "om")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816302241975107604/image0.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819101058785476618/20210310_135454.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -1364,7 +1365,18 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "gei")) {
 			EmbedBuilder embed = new EmbedBuilder();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/819095573331443722/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/818461450599137330/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819096265765421056/Screenshot_20210310-133555_Discord.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -1421,6 +1433,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "nyambung")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819094092616957972/Screenshot_20210310-132721_Discord.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "harem")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/819097171991330836/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
