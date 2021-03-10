@@ -150,6 +150,7 @@ public class CommandList extends ListenerAdapter {
 					"telat\n"+
 					"terhura / terharu\n"+
 					"test\n"+
+					"tetawat\n"+
 					"tomay / tomat\n"+
 					"toxic / toksik\n"+
 					"track / ip\n"+
@@ -1379,6 +1380,13 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "psokopay")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734394376888778873/818704546750005278/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "tetawat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373978248249414/819085778167922698/Screenshot_20210310-125332_LINE.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
