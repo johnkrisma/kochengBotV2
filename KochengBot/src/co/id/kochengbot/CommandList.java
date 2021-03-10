@@ -114,6 +114,7 @@ public class CommandList extends ListenerAdapter {
 					"ntr\n"+
 					"nyambung\n"+
 					"nyimak\n"+
+					"ocincin\n"+
 					"off / ngambek\n"+
 					"ok\n"+
 					"om\n"+
@@ -133,6 +134,7 @@ public class CommandList extends ListenerAdapter {
 					"rehab / rehabilitas / rebihalitas\n"+
 					"retry / tetty\n"+
 					"ribut / ribiw\n"+
+					"sahabat\n"+
 					"sange / sangean\n"+
 					"sarapan\n"+
 					"sarjana / ekonomi\n"+
@@ -1440,6 +1442,20 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "harem")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/819097171991330836/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ocincin")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/797114259149553724/819266433770455070/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sahabat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/797114259149553724/819280123743436830/Screenshot_20210311-012920_Discord.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
