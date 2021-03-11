@@ -94,6 +94,7 @@ public class CommandList extends ListenerAdapter {
 					"latom / doa / amin\n"+
 					"lawak\n"+
 					"lonte / kobte\n"+
+					"mabar\n"+
 					"malam / malem\n"+
 					"mati\n"+
 					"mei / mei kita / mei gue\n"+
@@ -1456,6 +1457,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "sahabat")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/797114259149553724/819280123743436830/Screenshot_20210311-012920_Discord.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "mabar")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819444604755509288/IMG_20210311_123853.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
