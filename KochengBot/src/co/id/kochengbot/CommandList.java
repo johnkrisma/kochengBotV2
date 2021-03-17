@@ -112,6 +112,7 @@ public class CommandList extends ListenerAdapter {
 					"ngeri\n"+
 					"ngeyel\n"+
 					"ngontol\n"+
+					"npc\n"+
 					"ntr\n"+
 					"nyambung\n"+
 					"nyimak\n"+
@@ -1464,6 +1465,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "mabar")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819444604755509288/IMG_20210311_123853.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "npc")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/821556220396961812/IMG_20210317_083051.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
