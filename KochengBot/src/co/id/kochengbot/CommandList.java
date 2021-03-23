@@ -21,6 +21,7 @@ public class CommandList extends ListenerAdapter {
 					"ayaka / pride\n"+
 					"babi\n"+
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
+					"badut\n"+
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
 					"barbara / barabata / bandara\n"+
@@ -1488,6 +1489,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "hadeh")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/823498835527073812/362009.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "badut")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/797114259149553724/823986806478340157/ck56ov115sa31.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
