@@ -112,6 +112,7 @@ public class CommandList extends ListenerAdapter {
 					"nabung\n"+
 					"nasgor\n"+
 					"ngangkang\n"+
+					"ngantuk\n"+
 					"ngeri\n"+
 					"ngeyel\n"+
 					"ngontol\n"+
@@ -1496,6 +1497,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "badut")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/797114259149553724/823986806478340157/ck56ov115sa31.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ngantuk")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/824117155217670174/Screenshot_20210324-100619_LINE.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
