@@ -1066,7 +1066,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "percaya")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/813066873787908096/percaya.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/734394376888778873/826372947186810920/PicsArt_03-30-03.30.57.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
