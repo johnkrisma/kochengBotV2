@@ -96,6 +96,7 @@ public class CommandList extends ListenerAdapter {
 					"lah / ngatur\n"+
 					"latom / doa / amin\n"+
 					"lawak\n"+
+					"leyline\n"+
 					"lonte / kobte\n"+
 					"lupa\n"+
 					"mabar\n"+
@@ -1512,6 +1513,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "klee")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/832991412701626428/FB_IMG_1606374231893.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "leyline")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/775964396241027092/833201470601035776/ea-1.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
