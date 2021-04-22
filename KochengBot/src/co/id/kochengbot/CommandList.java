@@ -143,6 +143,7 @@ public class CommandList extends ListenerAdapter {
 					"retry / tetty\n"+
 					"ribut / ribiw\n"+
 					"sahabat\n"+
+					"salto\n"+
 					"sange / sangean\n"+
 					"sarapan\n"+
 					"sarjana / ekonomi\n"+
@@ -1520,6 +1521,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "leyline")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/775964396241027092/833201470601035776/ea-1.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "salto")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/834549559412654080/IMG_20210422_044835.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
