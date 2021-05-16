@@ -59,7 +59,7 @@ public class CommandList extends ListenerAdapter {
 					"geh\n"+
 					"gei\n"+
 					"gesek\n"+
-					"goblog / goblok / hiu\n"+
+					"goblog / goblok \n"+
 					"hadeh\n"+
 					"hak\n"+
 					"hamil\n"+
@@ -178,7 +178,8 @@ public class CommandList extends ListenerAdapter {
 					"woo / pantek\n"+
 					"xingqiu / xing\n"+
 					"yan / jajan\n"+
-					"yes\n"
+					"yes\n"+
+					"yuri\n"
 					);
 			
 			event.getChannel().sendTyping().queue();
@@ -738,10 +739,9 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "goblok")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "goblog")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "hiu")) {
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "goblog")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/kmmoFmC.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/734394269871112212/843443030618669086/FB_IMG_1621162736987.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -1528,6 +1528,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "salto")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/834549559412654080/IMG_20210422_044835.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "yuri")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/839476132407410718/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
