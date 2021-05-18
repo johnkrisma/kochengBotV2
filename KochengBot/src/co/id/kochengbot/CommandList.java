@@ -70,6 +70,7 @@ public class CommandList extends ListenerAdapter {
 					"homa / atlas\n"+
 					"homo\n"+
 					"homuking\n"+
+					"horny / hirji\n"+
 					"hujat\n"+
 					"ijo\n"+
 					"ingat / tobat\n"+
@@ -1535,6 +1536,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "yuri")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/839476132407410718/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hirji")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "horny")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/844136738570108928/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
