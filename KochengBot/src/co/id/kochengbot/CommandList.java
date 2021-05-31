@@ -42,6 +42,7 @@ public class CommandList extends ListenerAdapter {
 					"curhat\n"+
 					"damai\n"+
 					"dokter\n"+
+					"dompet\n"+
 					"des\n"+
 					"diem / diam\n"+
 					"dildo\n"+
@@ -1539,6 +1540,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "miskin")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/846597982433837076/IMG_20210521_200731.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "dompet")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/848847011725836308/PicsArt_05-31-03.54.46.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
