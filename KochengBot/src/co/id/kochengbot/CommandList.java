@@ -58,6 +58,7 @@ public class CommandList extends ListenerAdapter {
 					"gay\n"+
 					"geh\n"+
 					"gei\n"+
+					"gem\n"+
 					"gesek\n"+
 					"goblog / goblok \n"+
 					"hadeh\n"+
@@ -177,6 +178,7 @@ public class CommandList extends ListenerAdapter {
 					"tusuk\n"+
 					"ty / thx / thanks\n"+
 					"typo / tipo\n"+
+					"wawasan\n"+
 					"welcome\n"+
 					"woi\n"+
 					"woo / pantek\n"+
@@ -1564,6 +1566,20 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "tipo")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/850008387658973194/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gem")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734388021620637716/851424087430397952/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "wawasan")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/854270787816128542/IMG_20210615_150654.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
