@@ -184,6 +184,7 @@ public class CommandList extends ListenerAdapter {
 					"woo / pantek\n"+
 					"xingqiu / xing\n"+
 					"yan / jajan\n"+
+					"yanfei\n"+
 					"yes\n"+
 					"yuri\n"
 					);
@@ -1583,6 +1584,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "ss")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/854617477493555220/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "yanfei")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/854649566933680138/image0.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
