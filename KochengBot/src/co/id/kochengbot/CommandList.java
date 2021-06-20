@@ -17,7 +17,7 @@ public class CommandList extends ListenerAdapter {
 					"astaga / astava / asfava\n"+
 					"ampas\n"+
 					"atitut\n"+
-					"ayaka / pride\n"+
+					"ayaka\n"+
 					"babi\n"+
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
 					"badut\n"+
@@ -138,6 +138,7 @@ public class CommandList extends ListenerAdapter {
 					"percaya\n"+
 					"pervert / perv"+
 					"pici / pc\n"+
+					"pride\n"+
 					"ps5\n"+
 					"psikopat / psokopay"+
 					"pukul / berani\n"+
@@ -1110,8 +1111,7 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "ayaka")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "pride")) {
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "pride")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/813066841189908480/ayaka.jpg");
 			
@@ -1591,6 +1591,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "yanfei")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/854649566933680138/image0.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ayaka")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/855996445190914048/149301307_3710108195708879_1620994372999686783_n.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
