@@ -82,6 +82,7 @@ public class CommandList extends ListenerAdapter {
 					"jijik\n"+
 					"jiwan\n"+
 					"jodoh\n"+
+					"kalah\n"+
 					"kasar / laskar\n"+
 					"kawaii / kawai\n"+
 					"kecoa\n"+
@@ -1598,6 +1599,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "ayaka")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/855996445190914048/149301307_3710108195708879_1620994372999686783_n.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kalah")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/856003732344143872/IMG_20210620_105233.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
