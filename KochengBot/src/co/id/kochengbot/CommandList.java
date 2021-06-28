@@ -59,6 +59,7 @@ public class CommandList extends ListenerAdapter {
 					"geh\n"+
 					"gei\n"+
 					"gem\n"+
+					"genshin\n"+
 					"gesek\n"+
 					"goblog / goblok \n"+
 					"hadeh\n"+
@@ -1606,6 +1607,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "kalah")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/856003732344143872/IMG_20210620_105233.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "genshin")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/858930382670135307/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
