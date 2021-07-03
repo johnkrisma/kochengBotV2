@@ -154,6 +154,7 @@ public class CommandList extends ListenerAdapter {
 					"sahabat\n"+
 					"salto\n"+
 					"sange / sangean\n"+
+					"saoi\n"+
 					"sarapan\n"+
 					"sarjana / ekonomi\n"+
 					"saus / sauce / pasal\n"+
@@ -1631,6 +1632,13 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "keju")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/860859650870083594/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "saoi")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/860863398705889310/IMG_20210703_204326.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
