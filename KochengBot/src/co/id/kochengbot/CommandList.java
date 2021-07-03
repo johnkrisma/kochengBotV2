@@ -35,6 +35,7 @@ public class CommandList extends ListenerAdapter {
 					"cengeng\n"+
 					"chongyun / chong\n"+
 					"citacita\n"+
+					"coklat / keju\n"+
 					"coli\n"+
 					"crot\n"+
 					"cupu / cupi / payah\n"+
@@ -1622,6 +1623,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "mengheningkan")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/859947294273830932/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "coklat")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "keju")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/860859650870083594/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
