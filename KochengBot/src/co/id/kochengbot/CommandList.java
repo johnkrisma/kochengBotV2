@@ -24,6 +24,7 @@ public class CommandList extends ListenerAdapter {
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
 					"barbara / barabata / bandara\n"+
+					"berak / beraq\n"+
 					"biadam\n"+
 					"bismillah\n"+
 					"bokong\n"+
@@ -84,6 +85,7 @@ public class CommandList extends ListenerAdapter {
 					"jijik\n"+
 					"jiwan\n"+
 					"jodoh\n"+
+					"jumatan\n"+
 					"kalah\n"+
 					"kasar / laskar\n"+
 					"kawaii / kawai\n"+
@@ -1647,6 +1649,21 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "update")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/729552134663831622/863344486012289084/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "berak")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "beraq")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/863367437021478912/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "jumatan")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/863367301411242004/Screenshot_20210709114010.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
