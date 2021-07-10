@@ -184,6 +184,7 @@ public class CommandList extends ListenerAdapter {
 					"tusuk\n"+
 					"ty / thx / thanks\n"+
 					"typo / tipo\n"+
+					"update\n"+
 					"wawasan\n"+
 					"welcome\n"+
 					"woi\n"+
@@ -1639,6 +1640,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "saoi")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/860863398705889310/IMG_20210703_204326.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "update")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/729552134663831622/863344486012289084/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
