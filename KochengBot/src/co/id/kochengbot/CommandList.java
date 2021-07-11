@@ -101,6 +101,7 @@ public class CommandList extends ListenerAdapter {
 					"kubus / kunus\n"+
 					"kuota\n"+
 					"laksek\n"+
+					"laku\n"+
 					"lah / ngatur\n"+
 					"latom / doa / amin\n"+
 					"lawak\n"+
@@ -1664,6 +1665,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "jumatan")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/863367301411242004/Screenshot_20210709114010.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "laku")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/862941469140713492/IMG_20210709_142103.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
