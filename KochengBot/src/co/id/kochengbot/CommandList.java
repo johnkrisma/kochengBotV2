@@ -137,6 +137,7 @@ public class CommandList extends ListenerAdapter {
 					"off / ngambek\n"+
 					"ok\n"+
 					"om\n"+
+					"onat\n"+
 					"out / pelatih / pelatuh\n"+
 					"paansi / apasih / apasih / paansih / apaansih / apasi\n"+
 					"pagi\n"+
@@ -1672,6 +1673,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "laku")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/862941469140713492/IMG_20210709_142103.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "onat")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/866655312164421633/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
