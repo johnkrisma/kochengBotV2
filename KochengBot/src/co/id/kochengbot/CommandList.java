@@ -82,6 +82,7 @@ public class CommandList extends ListenerAdapter {
 					"isep\n"+
 					"janji\n"+
 					"jaog / jago / ampun / seram/ sram / sramz\n"+
+					"jelata\n"+
 					"jembut / jembud\n"+
 					"jijik\n"+
 					"jiwan\n"+
@@ -1704,6 +1705,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "anal")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/872493799014813706/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "jelata")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/877355694481891379/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
