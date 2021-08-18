@@ -24,6 +24,7 @@ public class CommandList extends ListenerAdapter {
 					"badut\n"+
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
+					"baper / laper\n"+
 					"barbara / barabata / bandara\n"+
 					"berak / beraq\n"+
 					"biadam\n"+
@@ -1712,6 +1713,14 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "jelata")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/877355694481891379/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "baper")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "laper")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/877372182051835954/IMG_20210818_100330.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
