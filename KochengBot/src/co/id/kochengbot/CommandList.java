@@ -29,6 +29,7 @@ public class CommandList extends ListenerAdapter {
 					"berak / beraq\n"+
 					"biadam\n"+
 					"bismillah\n"+
+					"bobi\n"+
 					"bokong\n"+
 					"bomat / gapeduli\n"+
 					"bosan\n"+
@@ -1721,6 +1722,13 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "laper")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/877372182051835954/IMG_20210818_100330.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "bobi")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/882179034937692162/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
