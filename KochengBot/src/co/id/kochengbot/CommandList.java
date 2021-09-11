@@ -133,6 +133,7 @@ public class CommandList extends ListenerAdapter {
 					"ngeri\n"+
 					"ngeyel\n"+
 					"ngontol\n"+
+					"nguli\n"+
 					"npc\n"+
 					"ntr\n"+
 					"nyambung\n"+
@@ -1395,18 +1396,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "gei")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			
-			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/819095573331443722/ea.jpg");
-			
-			event.getChannel().sendTyping().queue();
-			event.getChannel().sendMessage(embed.build()).queue();
-			
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/818461450599137330/unknown.png");
-			
-			event.getChannel().sendTyping().queue();
-			event.getChannel().sendMessage(embed.build()).queue();
-			
-			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819096265765421056/Screenshot_20210310-133555_Discord.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -1733,6 +1723,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "nguli")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/775964396241027092/886083553555787776/InkedET7FXW6UEAU7Gg9_LI.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		
 		//not listed yet
 	}
