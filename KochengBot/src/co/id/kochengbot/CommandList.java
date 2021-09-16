@@ -26,6 +26,7 @@ public class CommandList extends ListenerAdapter {
 					"balon / balonku\n"+
 					"baper / laper\n"+
 					"barbara / barabata / bandara\n"+
+					"benar\n"+
 					"berak / beraq\n"+
 					"biadam\n"+
 					"bismillah\n"+
@@ -1730,7 +1731,13 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "benar")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/888037070080188476/Screenshot_2021_0916_202204.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
 		
 		//not listed yet
 	}
