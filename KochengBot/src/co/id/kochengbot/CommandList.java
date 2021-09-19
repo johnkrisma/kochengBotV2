@@ -133,6 +133,7 @@ public class CommandList extends ListenerAdapter {
 					"ngantuk\n"+
 					"ngeri\n"+
 					"ngeyel\n"+
+					"ngocok\n"+
 					"ngontol\n"+
 					"nguli\n"+
 					"npc\n"+
@@ -1734,6 +1735,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "benar")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/888037070080188476/Screenshot_2021_0916_202204.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ngocok")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/878668202048102410/889024368557051974/IMG_20210916_104219.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
