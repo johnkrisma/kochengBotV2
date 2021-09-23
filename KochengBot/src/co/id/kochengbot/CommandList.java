@@ -178,6 +178,7 @@ public class CommandList extends ListenerAdapter {
 					"sesat\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
+					"sopan\n"+
 					"ss\n"+
 					"summon / cium\n"+
 					"sunat\n"+
@@ -1750,6 +1751,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "insekyur")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/890134926903627836/890180736630554634/1615600537455.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sopan")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/778481550701494302/890521190437900298/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
