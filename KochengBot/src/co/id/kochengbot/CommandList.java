@@ -1500,7 +1500,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "badut")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/797114259149553724/823986806478340157/ck56ov115sa31.png");
+			embed.setImage("https://cdn.discordapp.com/attachments/734383000812388382/891035207682101308/E47m9tUXwAQddS5.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
