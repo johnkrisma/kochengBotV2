@@ -57,6 +57,7 @@ public class CommandList extends ListenerAdapter {
 					"faisal\n"+
 					"fendet / gender\n"+
 					"fubuki / fukuki / manual\n"+
+					"gacha\n"+
 					"gaguna"+
 					"gakreatif\n"+
 					"gangbang\n"+
@@ -1758,6 +1759,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "sopan")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/778481550701494302/890521190437900298/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gacha")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/829733282799026197/892739744398725130/IMG_20210929_144703.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
