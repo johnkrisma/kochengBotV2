@@ -100,6 +100,7 @@ public class CommandList extends ListenerAdapter {
 					"kekar\n"+
 					"keqing\n"+
 					"ketua\n"+
+					"kimpeha\n"+
 					"klee\n"+
 					"kocheng\n"+
 					"konglol\n"+
@@ -1766,6 +1767,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "gacha")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/829733282799026197/892739744398725130/IMG_20210929_144703.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kimpeha")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/829733282799026197/894620701678522378/image0-4.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
