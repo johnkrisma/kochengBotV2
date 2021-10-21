@@ -38,6 +38,7 @@ public class CommandList extends ListenerAdapter {
 					"capek\n"+
 					"cayman / cemen\n"+
 					"cengeng\n"+
+					"ceplok\n"+
 					"chongyun / chong\n"+
 					"citacita\n"+
 					"coklat / keju\n"+
@@ -1782,6 +1783,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "tag")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734388021620637716/895248598252519454/IMG_20211006_165748.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ceplok")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734394269871112212/900597457178738748/IMG_20211021_111224.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
