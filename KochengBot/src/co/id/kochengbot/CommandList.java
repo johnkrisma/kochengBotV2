@@ -1508,6 +1508,11 @@ public class CommandList extends ListenerAdapter {
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/900680282896752660/PhotoGrid_Plus_1634795878005.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "ngantuk")) {
 			EmbedBuilder embed = new EmbedBuilder();
