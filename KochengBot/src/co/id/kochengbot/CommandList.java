@@ -133,6 +133,7 @@ public class CommandList extends ListenerAdapter {
 					"nangis\n"+
 					"nabung\n"+
 					"nasgor\n"+
+					"nenen\n"+
 					"ngangkang\n"+
 					"ngantuk\n"+
 					"ngeri\n"+
@@ -1795,6 +1796,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "ceplok")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734394269871112212/900597457178738748/IMG_20211021_111224.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "nenen")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/829733282799026197/905446922347765761/received_259481762726523.jpeg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
