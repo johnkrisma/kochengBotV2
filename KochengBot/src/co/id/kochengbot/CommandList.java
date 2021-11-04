@@ -1781,7 +1781,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "kimpeha")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/829733282799026197/894620701678522378/image0-4.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/905741843893981224/Untitled10_20211104155435.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
