@@ -129,6 +129,7 @@ public class CommandList extends ListenerAdapter {
 					"minta / bagi\n"+
 					"miskin\n"+
 					"monthly / monly\n"+
+					"monyet\n"+
 					"mulai\n"+
 					"nangis\n"+
 					"nabung\n"+
@@ -1803,6 +1804,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "nenen")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/829733282799026197/905446922347765761/received_259481762726523.jpeg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "monyet")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/914101847822835794/Screenshot_20211127_183413.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
