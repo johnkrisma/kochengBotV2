@@ -75,6 +75,7 @@ public class CommandList extends ListenerAdapter {
 					"hamil\n"+
 					"hantu\n"+
 					"harem\n"+
+					"henceut\n"+
 					"hdmi\n"+
 					"hode\n"+
 					"homa / atlas\n"+
@@ -1811,6 +1812,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "monyet")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/914101847822835794/Screenshot_20211127_183413.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "henceut")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/919226119654359122/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
