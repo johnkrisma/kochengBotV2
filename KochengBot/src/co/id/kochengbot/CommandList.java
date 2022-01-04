@@ -57,6 +57,7 @@ public class CommandList extends ListenerAdapter {
 					"emek\n"+
 					"faisal\n"+
 					"fendet / gender\n"+
+					"fetis / fetish\n"+
 					"fubuki / fukuki / manual\n"+
 					"gacha\n"+
 					"gaguna"+
@@ -98,6 +99,7 @@ public class CommandList extends ListenerAdapter {
 					"kalah\n"+
 					"kasar / laskar\n"+
 					"kawaii / kawai\n"+
+					"kaya\n"+
 					"kecoa\n"+
 					"kekar\n"+
 					"keqing\n"+
@@ -215,6 +217,7 @@ public class CommandList extends ListenerAdapter {
 					"yan / jajan\n"+
 					"yanfei\n"+
 					"yes\n"+
+					"yoga\n"+
 					"yuri\n"
 					);
 			
@@ -1819,6 +1822,28 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "henceut")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/919226119654359122/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "fetis")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "fetish")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734394269871112212/924583623812849664/IMG_20211226_154507.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "yoga")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734394269871112212/924613777905811486/PicsArt_12-25-08.27.24.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kaya")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/927839568147914792/unknown.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
