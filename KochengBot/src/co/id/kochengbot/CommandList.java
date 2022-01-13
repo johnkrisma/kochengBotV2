@@ -13,6 +13,7 @@ public class CommandList extends ListenerAdapter {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
+					"====================\n"+
 					"achievement / achivmen / acivmen / acimen\n"+
 					"astaga / astava / asfava\n"+
 					"ampas\n"+
@@ -113,6 +114,19 @@ public class CommandList extends ListenerAdapter {
 					"kubus / kunus\n"+
 					"kuota\n"+
 					"laksek\n"+
+					"====================\n"+
+					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
+					);
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "list2")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setTitle("Command List Kocheng");
+			embed.setDescription(
+					"====================\n"+
 					"laku\n"+
 					"lah / ngatur\n"+
 					"latom / doa / amin\n"+
@@ -213,16 +227,28 @@ public class CommandList extends ListenerAdapter {
 					"welcome\n"+
 					"woi\n"+
 					"woo / pantek\n"+
-					"xingqiu / xing\n"+
-					"yan / jajan\n"+
-					"yanfei\n"+
-					"yes\n"+
-					"yoga\n"+
-					"yuri\n"
+					"====================\n"+
+					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
-			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "list3")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setTitle("Command List Kocheng");
+			embed.setDescription(
+				"====================\n"+
+				"xingqiu / xing\n"+
+				"yan / jajan\n"+
+				"yanfei\n"+
+				"yes\n"+
+				"yoga\n"+
+				"yuri\n"+
+				"====================\n"
+				);
+		event.getChannel().sendTyping().queue();
+		event.getChannel().sendMessage(embed.build()).queue();
 		}
 		
 		//info kocheng response
