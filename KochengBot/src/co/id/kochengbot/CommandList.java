@@ -77,6 +77,7 @@ public class CommandList extends ListenerAdapter {
 					"hamil\n"+
 					"hantu\n"+
 					"harem\n"+
+					"hayo\n"+
 					"henceut\n"+
 					"hdmi\n"+
 					"hode\n"+
@@ -113,7 +114,6 @@ public class CommandList extends ListenerAdapter {
 					"kontol\n"+
 					"kubus / kunus\n"+
 					"kuota\n"+
-					"laksek\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -127,6 +127,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"laksek\n"+
 					"laku\n"+
 					"lah / ngatur\n"+
 					"latom / doa / amin\n"+
@@ -193,7 +194,7 @@ public class CommandList extends ListenerAdapter {
 					"saoi\n"+
 					"sarapan\n"+
 					"sarjana / ekonomi\n"+
-					"saus / sauce / pasal\n"+
+					"saus / saos / sauce / pasal\n"+
 					"segar\n"+
 					"selaw\n"+
 					"seno\n"+
@@ -238,15 +239,15 @@ public class CommandList extends ListenerAdapter {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
-				"====================\n"+
-				"xingqiu / xing\n"+
-				"yan / jajan\n"+
-				"yanfei\n"+
-				"yes\n"+
-				"yoga\n"+
-				"yuri\n"+
-				"====================\n"
-				);
+					"====================\n"+
+					"xingqiu / xing\n"+
+					"yan / jajan\n"+
+					"yanfei\n"+
+					"yes\n"+
+					"yoga\n"+
+					"yuri\n"+
+					"====================\n"
+					);
 		event.getChannel().sendTyping().queue();
 		event.getChannel().sendMessage(embed.build()).queue();
 		}
@@ -733,9 +734,15 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "sauce")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "saus")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "pasal")) {
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "pasal")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "saos")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://i.imgur.com/qvb7dDI.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+			
+			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/937966496125157426/IMG_20220110_150334.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
@@ -1870,6 +1877,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "kaya")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/927839568147914792/unknown.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hayo")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/937194253199765524/hayo_ngapain_pegang_tytyd.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
