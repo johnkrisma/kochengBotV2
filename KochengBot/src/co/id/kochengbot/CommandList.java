@@ -132,8 +132,8 @@ public class CommandList extends ListenerAdapter {
 					"lah / ngatur\n"+
 					"latom / doa / amin\n"+
 					"lawak\n"+
-					"leyline\n"+
 					"lemah\n"+
+					"leyline\n"+
 					"lonte / kobte\n"+
 					"lupa\n"+
 					"mabar\n"+
