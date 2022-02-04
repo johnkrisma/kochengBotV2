@@ -133,6 +133,7 @@ public class CommandList extends ListenerAdapter {
 					"latom / doa / amin\n"+
 					"lawak\n"+
 					"leyline\n"+
+					"lemah\n"+
 					"lonte / kobte\n"+
 					"lupa\n"+
 					"mabar\n"+
@@ -227,7 +228,6 @@ public class CommandList extends ListenerAdapter {
 					"wawasan\n"+
 					"welcome\n"+
 					"woi\n"+
-					"woo / pantek\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -240,6 +240,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"woo / pantek\n"+
 					"xingqiu / xing\n"+
 					"yan / jajan\n"+
 					"yanfei\n"+
@@ -1884,6 +1885,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "hayo")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/937194253199765524/hayo_ngapain_pegang_tytyd.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "lemah")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/939040257456877628/IMG_20220204_105141.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
