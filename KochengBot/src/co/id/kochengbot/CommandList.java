@@ -1147,7 +1147,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "telat")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/BHNfKRD.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/993358037958017104/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
