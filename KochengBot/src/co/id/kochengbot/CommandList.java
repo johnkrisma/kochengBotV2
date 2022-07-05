@@ -1805,7 +1805,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "nguli")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/775964396241027092/886083553555787776/InkedET7FXW6UEAU7Gg9_LI.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/993859407370792960/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
