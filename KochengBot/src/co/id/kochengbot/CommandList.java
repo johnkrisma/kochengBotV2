@@ -1840,7 +1840,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "gacha")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/829733282799026197/892739744398725130/IMG_20210929_144703.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/994279002044899378/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
