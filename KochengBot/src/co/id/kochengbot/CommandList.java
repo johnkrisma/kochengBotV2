@@ -96,8 +96,9 @@ public class CommandList extends ListenerAdapter {
 					"hantu\n"+
 					"harem\n"+
 					"hayo\n"+
-					"henceut\n"+
 					"hdmi\n"+
+					"henceut\n"+
+					"hijau\n"+
 					"hode\n"+
 					"homa / atlas\n"+
 					"homo\n"+
@@ -113,7 +114,6 @@ public class CommandList extends ListenerAdapter {
 					"jelata\n"+
 					"jelek\n"+
 					"jembut / jembud\n"+
-					"jijik\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -127,6 +127,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"jijik\n"+
 					"jiwan\n"+
 					"jodoh\n"+
 					"jumatan\n"+
@@ -227,7 +228,6 @@ public class CommandList extends ListenerAdapter {
 					"sesat\n"+
 					"shap / siap\n"+
 					"sipaling\n"+
-					"smash / semes / smesh\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -240,6 +240,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"smash / semes / smesh\n"+
 					"sodok\n"+
 					"sopan\n"+
 					"sore\n"+
@@ -2159,6 +2160,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "kentu")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734388021620637716/993076213436391535/IMG_20220702_180656.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hijau")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/996039773582000218/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
