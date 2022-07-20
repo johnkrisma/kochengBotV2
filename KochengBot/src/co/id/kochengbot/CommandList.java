@@ -89,6 +89,7 @@ public class CommandList extends ListenerAdapter {
 					"gem\n"+
 					"genshin\n"+
 					"gesek\n"+
+					"gitar\n"+
 					"goblog / goblok \n"+
 					"hadeh\n"+
 					"hak\n"+
@@ -113,7 +114,6 @@ public class CommandList extends ListenerAdapter {
 					"jaog / jago / ampun / seram/ sram / sramz\n"+
 					"jelata\n"+
 					"jelek\n"+
-					"jembut / jembud\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -127,6 +127,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"jembut / jembud\n"+
 					"jijik\n"+
 					"jiwan\n"+
 					"jodoh\n"+
@@ -227,7 +228,6 @@ public class CommandList extends ListenerAdapter {
 					"seno\n"+
 					"sesat\n"+
 					"shap / siap\n"+
-					"sipaling\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -240,6 +240,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"sipaling\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
 					"sopan\n"+
@@ -2167,6 +2168,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "hijau")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/996039773582000218/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gitar")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/999342727596613802/IMG_20220720_173557.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
