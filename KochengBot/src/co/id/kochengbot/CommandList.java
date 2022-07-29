@@ -179,6 +179,7 @@ public class CommandList extends ListenerAdapter {
 					"mulai\n"+
 					"nangis\n"+
 					"nabung\n"+
+					"nahida\n"+
 					"nasgor\n"+
 					"nenen\n"+
 					"ngambek\n"+
@@ -2187,7 +2188,15 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "nahida")) {
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage("NAHIDA... NAHIDA NAHIDA NAHIDAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAA\r\n"
+					+ "AAAAAAAAAAAAAAAAAGH AAAAAAAAAAAAAAAAAAAAAAAGH! WANGI WANGI WANGI WANGI HU HA HU HA HU HA, aaaah baunya Nahida wangi aku mau nyiumin aroma wanginya Nahida AAAAAAAAH Rambutnya. AAAHHH rambutnya juga pengen aku elus-elus ----- AAAAAH Nahida keluar pertama kali juga manis!!! Dia senyum itu juga manis banget AAAAAAAAH NAHIDA LUCCUUUUUUUUUUUUUUU......... GUA BAKAL RELA TOPUP 5 JUTA BUAT NAHIDA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH\r\n"
+					+ "Apa? Nahida itu gak nyata? Cuma karakter 2 dimensi katamu?\r\n"
+					+ "Nggak ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK WIBU BANGSAAAAAT!\r\n"
+					+ "GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI Nahida ngeliat gw. Nahida di pici ngeliatin gw. Nahida... kamu percaya sama aku? AAAAAAAAHHH syukur Nahida gak malu merelakan aku aaaaaah!!! YEAAAAAAAAAAAH GUA MASIH PUNYA NAHIDA, SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH").queue();
+		}
 		//not listed yet
 	}
 }
