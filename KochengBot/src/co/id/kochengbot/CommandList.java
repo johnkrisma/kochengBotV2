@@ -260,6 +260,7 @@ public class CommandList extends ListenerAdapter {
 					"terhura / terharu\n"+
 					"test\n"+
 					"tidur\n"+
+					"tingkahmu\n"+
 					"titit / titid\n"+
 					"tovat\n"+
 					"tomay / tomat\n"+
@@ -2197,6 +2198,14 @@ public class CommandList extends ListenerAdapter {
 					+ "Nggak ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK WIBU BANGSAAAAAT!\r\n"
 					+ "GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI Nahida ngeliat gw. Nahida di pici ngeliatin gw. Nahida... kamu percaya sama aku? AAAAAAAAHHH syukur Nahida gak malu merelakan aku aaaaaah!!! YEAAAAAAAAAAAH GUA MASIH PUNYA NAHIDA, SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH").queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "tingkahmu")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1003130089455755305/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
