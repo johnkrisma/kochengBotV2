@@ -37,7 +37,7 @@ public class CommandList extends ListenerAdapter {
 					"bismillah\n"+
 					"bobi\n"+
 					"bohong\n"+
-					"bokep\n"+
+					"bokep / bocil\n"+
 					"bokong\n"+
 					"bomat / gapeduli\n"+
 					"bosan\n"+
@@ -2046,7 +2046,8 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "bokep")) {
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "bokep")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "bocil")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734258297145917461/975937672960962620/Screenshot_20220517_094735.jpg");
 			
