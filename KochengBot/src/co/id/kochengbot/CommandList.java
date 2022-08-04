@@ -42,7 +42,6 @@ public class CommandList extends ListenerAdapter {
 					"bomat / gapeduli\n"+
 					"bosan\n"+
 					"burung\n"+
-					"c2\n"+
 					"canda\n"+
 					"capek\n"+
 					"cayman / cemen\n"+
@@ -91,6 +90,7 @@ public class CommandList extends ListenerAdapter {
 					"gem\n"+
 					"genshin\n"+
 					"gesek\n"+
+					"gigit\n"+
 					"gitar\n"+
 					"goblog / goblok \n"+
 					"hadeh\n"+
@@ -2208,16 +2208,16 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "c2")) {
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "mobil")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1004681456850849792/ea.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1004746674700304474/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "mobil")) {
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gigit")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1004746674700304474/ea.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1004749569210462288/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
