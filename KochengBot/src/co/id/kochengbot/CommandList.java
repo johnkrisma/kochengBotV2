@@ -267,6 +267,7 @@ public class CommandList extends ListenerAdapter {
 					"tidur\n"+
 					"tingkahmu\n"+
 					"titit / titid\n"+
+					"tolak\n"+
 					"tovat\n"+
 					"tomay / tomat\n"+
 					"toxic / toksik\n"+
@@ -2242,6 +2243,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "muak")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1017394620075876372/gw_udah_muak.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "tolak")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1018698872589140059/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
