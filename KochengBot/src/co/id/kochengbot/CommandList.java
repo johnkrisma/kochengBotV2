@@ -103,6 +103,7 @@ public class CommandList extends ListenerAdapter {
 					"henceut\n"+
 					"hijau\n"+
 					"hode\n"+
+					"hoki\n"+
 					"homa / atlas\n"+
 					"homo\n"+
 					"homuking\n"+
@@ -113,7 +114,6 @@ public class CommandList extends ListenerAdapter {
 					"insekyur\n"+
 					"isep\n"+
 					"janji\n"+
-					"jaog / jago / ampun / seram/ sram / sramz\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -127,6 +127,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"jaog / jago / ampun / seram/ sram / sramz\n"+
 					"jelata\n"+
 					"jelek\n"+
 					"jembut / jembud\n"+
@@ -228,7 +229,6 @@ public class CommandList extends ListenerAdapter {
 					"saoi\n"+
 					"sarapan\n"+
 					"sarjana / ekonomi\n"+
-					"saus / saos / sauce / pasal\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -241,6 +241,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"saus / saos / sauce / pasal\n"+
 					"sedih\n"+
 					"segar\n"+
 					"selaw\n"+
@@ -2250,6 +2251,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "tolak")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1018698872589140059/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hoki")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1021084087328460890/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
