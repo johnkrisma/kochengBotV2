@@ -26,6 +26,7 @@ public class CommandList extends ListenerAdapter {
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
 					"badut\n"+
 					"bagus\n"+
+					"baik\n"+
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
 					"banjir / fakta\n"+
@@ -93,6 +94,7 @@ public class CommandList extends ListenerAdapter {
 					"gem\n"+
 					"genshin\n"+
 					"gesek\n"+
+					"gila\n"+
 					"gigit\n"+
 					"gitar\n"+
 					"goblog / goblok \n"+
@@ -112,8 +114,6 @@ public class CommandList extends ListenerAdapter {
 					"homuking\n"+
 					"horny / hirji\n"+
 					"hujat\n"+
-					"ijo\n"+
-					"ingat / tobat\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -127,6 +127,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"ijo\n"+
+					"ingat / tobat\n"+
 					"insekyur\n"+
 					"isep\n"+
 					"janji\n"+
@@ -227,8 +229,6 @@ public class CommandList extends ListenerAdapter {
 					"rapsodi\n"+
 					"rehab / rehabilitas / rebihalitas\n"+
 					"retry / tetty\n"+
-					"ribut / ribiw\n"+
-					"sahabat\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -241,6 +241,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"ribut / ribiw\n"+
+					"sahabat\n"+
 					"salto\n"+
 					"sange / sangean\n"+
 					"saoi\n"+
@@ -2298,6 +2300,20 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "dana")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1022087612988669962/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gila")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1022157397168488448/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "baik")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1022184130089340948/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
