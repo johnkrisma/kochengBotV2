@@ -243,6 +243,7 @@ public class CommandList extends ListenerAdapter {
 					"====================\n"+
 					"retry / tetty\n"+
 					"ribut / ribiw\n"+
+					"rog\n"+
 					"sahabat\n"+
 					"salto\n"+
 					"sange / sangean\n"+
@@ -2322,6 +2323,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "khunul")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1022395661976604693/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "rog")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1023230952748617838/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
