@@ -1015,12 +1015,12 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "takut")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://i.imgur.com/oqasY19.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1023993399751221268/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 			
-			embed.setImage("https://i.imgur.com/w25l9bX.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1023993400137105518/eaea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
