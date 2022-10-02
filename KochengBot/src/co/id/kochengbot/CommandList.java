@@ -171,6 +171,7 @@ public class CommandList extends ListenerAdapter {
 					"lengah\n"+
 					"leyline\n"+
 					"lonte / kobte\n"+
+					"lucu\n"+
 					"lupa\n"+
 					"mabar\n"+
 					"malam / malem\n"+
@@ -229,7 +230,6 @@ public class CommandList extends ListenerAdapter {
 					"pride\n"+
 					"ps5\n"+
 					"psikopat / psokopay"+
-					"pukul / berani\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -242,6 +242,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"pukul / berani\n"+
 					"qiqi\n"+
 					"rapsodi\n"+
 					"rehab / rehabilitas / rebihalitas\n"+
@@ -296,6 +297,7 @@ public class CommandList extends ListenerAdapter {
 					"update\n"+
 					"wawasan\n"+
 					"welcome\n"+
+					"wibu\n"+
 					"woi\n"+
 					"woo / pantek\n"+
 					"xingqiu / xing\n"+
@@ -2373,6 +2375,20 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "anj")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1024531326709284894/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "wibu")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1025956267518333058/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "lucu")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1026148077221974136/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
