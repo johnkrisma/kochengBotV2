@@ -270,6 +270,7 @@ public class CommandList extends ListenerAdapter {
 					"ss\n"+
 					"summon / cium\n"+
 					"sunat\n"+
+					"susu\n"+
 					"taat / aturan\n"+
 					"tag\n"+
 					"takut\n"+
@@ -2389,6 +2390,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "lucu")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1026148077221974136/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "susu")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1027191091058987149/ea.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
