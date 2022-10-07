@@ -170,6 +170,7 @@ public class CommandList extends ListenerAdapter {
 					"lemah\n"+
 					"lengah\n"+
 					"leyline\n"+
+					"login\n"+
 					"lonte / kobte\n"+
 					"lucu\n"+
 					"lupa\n"+
@@ -229,7 +230,6 @@ public class CommandList extends ListenerAdapter {
 					"pici / pc\n"+
 					"pride\n"+
 					"ps5\n"+
-					"psikopat / psokopay"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -242,6 +242,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"psikopat / psokopay"+
 					"pukul / berani\n"+
 					"qiqi\n"+
 					"rapsodi\n"+
@@ -2401,6 +2402,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessage(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "login")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1027943455651008562/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessage(embed.build()).queue();
+		}
+		
 		
 		//not listed yet
 	}
