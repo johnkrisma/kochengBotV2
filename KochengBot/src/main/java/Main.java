@@ -15,7 +15,7 @@ public class Main {
 	
 	//Main
 	public static void main(String[] args) throws LoginException {
-		String token = System.getenv("TOKEN");
+		String token = "MTAxMTkzNTEzMTU3MDgwMjcyOA.Gomgcg.92tcE1rT6MXY7DymiwznJhTHzYgS9nfZz1oSJA";
 		
 		JDA jda = JDABuilder.createDefault(token).build();
 		jda.getPresence().setStatus(OnlineStatus.ONLINE);
