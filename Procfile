@@ -1,1 +1,1 @@
-Worker: java /src/co/id/kochengbot/KochengController.java
+Worker: java KochengBot/src/co/id/kochengbot/KochengController.java

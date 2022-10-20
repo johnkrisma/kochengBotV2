@@ -11,10 +11,11 @@ public class KochengController {
 
 	public static JDA jda;
 	public static String prefix = ".";
-	public static String token = System.getenv("TOKEN");
 	
 	//Main
 	public static void main(String[] args) throws LoginException {
+		String token = System.getenv("TOKEN");
+		
 		JDA jda = JDABuilder.createDefault(token).build();
 		jda.getPresence().setStatus(OnlineStatus.ONLINE);
 		jda.getPresence().setActivity(Activity.listening(prefix + "list"));
