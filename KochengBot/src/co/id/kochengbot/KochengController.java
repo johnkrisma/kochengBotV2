@@ -14,7 +14,8 @@ public class KochengController {
 	
 	//Main
 	public static void main(String[] args) throws LoginException {
-		JDA jda = JDABuilder.createDefault("").build();
+		public static String token = System.getenv("TOKEN");
+		JDA jda = JDABuilder.createDefault(token).build();
 		jda.getPresence().setStatus(OnlineStatus.ONLINE);
 		jda.getPresence().setActivity(Activity.listening(prefix + "list"));
 		jda.addEventListener(new CommandList());
