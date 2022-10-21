@@ -1,1 +1,1 @@
-java -jar kocheng.jar
+web: java -jar kocheng.jar
