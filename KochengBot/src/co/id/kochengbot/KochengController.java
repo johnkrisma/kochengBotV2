@@ -14,7 +14,7 @@ public class KochengController {
 	
 	//Main
 	public static void main(String[] args) throws LoginException {
-		JDA jda = JDABuilder.createDefault("MTAxMTkzNTEzMTU3MDgwMjcyOA.Ghpadv.oi5PelJrvcXGXW9GNkPTlqtydmXGCUAQxvFa2c").build();
+		JDA jda = JDABuilder.createDefault("").build();
 		jda.getPresence().setStatus(OnlineStatus.ONLINE);
 		jda.getPresence().setActivity(Activity.listening(prefix + "list | Under Heavy Maintenance"));
 		jda.addEventListener(new CommandList());
