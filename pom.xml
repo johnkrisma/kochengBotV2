@@ -9,10 +9,10 @@
 	<version>1.0-SNAPSHOT</version>
 	
 	<build>
-		<sourceDirectory>/src/main/java</sourceDirectory>
+		<sourceDirectory>/KochengBot/src/main/java</sourceDirectory>
 		<resources>
 		    <resource>
-			<directory>${basedir}/src/main/java</directory>
+			<directory>${basedir}/KochengBot/src/main/java</directory>
 			<includes>
 			    <include>**/*.xml</include>
 			</includes>
