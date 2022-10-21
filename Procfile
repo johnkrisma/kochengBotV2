@@ -1,1 +1,1 @@
-web: java -jar kocheng.jar
+Worker: java -jar kocheng.jar
