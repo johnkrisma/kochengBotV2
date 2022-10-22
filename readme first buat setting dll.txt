@@ -18,3 +18,10 @@ kalian bisa ikutin contoh command list lain.
 7. pasang JDA di properties > java build path > external jar > JDA with dependencies > apply
 8. export > java > runnable jar > configurations: KochengController > select folder, mau diexport kemana file kochengbot nya
 9. bilang bilang ke yg buat kalo mau ada perubahan ya
+
+untuk xml, cek classpath yang ada di folder, ubah sesuai folder kalian. biasanya nabrak-nabrak antara jar satu sama jar lain. pastikan ada ini di xml kalian, sesuaikan foldernya:
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/kochengBotV2/kochengBotV2/JDA-4.3.0_331-withDependencies.jar"/>
+	<classpathentry kind="lib" path="E:/kochengBotV2/kochengBotV2/JDA-5.0.0-alpha.21-withDependencies.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
