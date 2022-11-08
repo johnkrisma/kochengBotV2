@@ -14,6 +14,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"3jt\n"+
 					"50k\n"+
 					"achievement / achivmen / acivmen / acimen\n"+
 					"astaga / astava / asfava\n"+
@@ -67,6 +68,7 @@ public class CommandList extends ListenerAdapter {
 					"darimana\n"+
 					"dek\n"+
 					"des\n"+
+					"dev / fandom\n"+
 					"diem / diam\n"+
 					"dildo\n"+
 					"dokter\n"+
@@ -113,7 +115,6 @@ public class CommandList extends ListenerAdapter {
 					"hoki\n"+
 					"homa / atlas\n"+
 					"homo\n"+
-					"homuking\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -127,6 +128,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"homuking\n"+
 					"horny / hirji\n"+
 					"hujat\n"+
 					"ijo\n"+
@@ -229,7 +231,6 @@ public class CommandList extends ListenerAdapter {
 					"percaya\n"+
 					"perjaka\n"+
 					"pervert / perv"+
-					"pici / pc\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -242,6 +243,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"pici / pc\n"+
 					"pride\n"+
 					"ps5\n"+
 					"psikopat / psokopay"+
@@ -2421,6 +2423,21 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "kihomo")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1033383911687979099/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "3jt")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1037938614732083250/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "dev")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "fandom")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1039379953038413844/ea.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
