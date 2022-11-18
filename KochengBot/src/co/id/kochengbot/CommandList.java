@@ -250,6 +250,7 @@ public class CommandList extends ListenerAdapter {
 					"pukul / berani\n"+
 					"qiqi\n"+
 					"rapsodi\n"+
+					"rasakan\n"+
 					"rehab / rehabilitas / rebihalitas\n"+
 					"retry / tetty\n"+
 					"ribut / ribiw\n"+
@@ -2438,6 +2439,14 @@ public class CommandList extends ListenerAdapter {
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "fandom")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1039379953038413844/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "rasakan")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1043019515665064027/ohyarasakan-ganjar.gif");
+			
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
