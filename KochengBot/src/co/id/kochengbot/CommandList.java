@@ -81,7 +81,7 @@ public class CommandList extends ListenerAdapter {
 					"encok\n"+
 					"eregsi\n"+
 					"esse\n"+
-					"ewe\n"+
+					"ewe / eue\n"+
 					"f2p\n"+
 					"faisal\n"+
 					"fendet / gender\n"+
@@ -143,6 +143,7 @@ public class CommandList extends ListenerAdapter {
 					"jijik\n"+
 					"jiwan\n"+
 					"jodoh\n"+
+					"jokowi\n"+
 					"jumatan\n"+
 					"kalah\n"+
 					"kangen\n"+
@@ -179,6 +180,7 @@ public class CommandList extends ListenerAdapter {
 					"lupa\n"+
 					"mabar\n"+
 					"malam / malem\n"+
+					"malas\n"+
 					"mantap\n"+
 					"masuk\n"+
 					"mati\n"+
@@ -229,8 +231,6 @@ public class CommandList extends ListenerAdapter {
 					"pekok\n"+
 					"pendek\n"+
 					"percaya\n"+
-					"perjaka\n"+
-					"pervert / perv"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -243,6 +243,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"perjaka\n"+
+					"pervert / perv"+
 					"pici / pc\n"+
 					"pride\n"+
 					"ps5\n"+
@@ -2173,7 +2175,8 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "ewe")) {
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ewe")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "eue")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/734388695049830470/989732963929428018/unknown.png");
 			
@@ -2451,7 +2454,22 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "malas")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1040548380713168926/eaea.jpg");
+			
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "jokowi")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1044927134940024842/ea.jpg");
+			
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
