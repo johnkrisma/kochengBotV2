@@ -303,6 +303,7 @@ public class CommandList extends ListenerAdapter {
 					"tusuk\n"+
 					"ty / thx / thanks\n"+
 					"typo / tipo\n"+
+					"umam\n"+
 					"update\n"+
 					"wawasan\n"+
 					"welcome\n"+
@@ -2470,6 +2471,15 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "umam")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1048419919332655134/ea.png");
+			
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
