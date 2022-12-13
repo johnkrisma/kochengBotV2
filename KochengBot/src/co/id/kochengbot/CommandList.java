@@ -129,6 +129,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setDescription(
 					"====================\n"+
 					"homuking\n"+
+					"hooh\n"+
 					"horny / hirji\n"+
 					"hujat\n"+
 					"ijo\n"+
@@ -230,7 +231,6 @@ public class CommandList extends ListenerAdapter {
 					"pegal\n"+
 					"pekok\n"+
 					"pendek\n"+
-					"percaya\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -243,6 +243,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"percaya\n"+
 					"perjaka\n"+
 					"pervert / perv"+
 					"pici / pc\n"+
@@ -2479,7 +2480,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
 		}
-		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hooh")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://tenor.com/view/hooh-mataramisred-mataramisblue-gif-21492374");
+			
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
 		//not listed yet
 	}
 }
