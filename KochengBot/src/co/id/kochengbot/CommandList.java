@@ -1635,7 +1635,7 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "leyline")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/775964396241027092/833201470601035776/ea-1.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1053561890296582195/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
