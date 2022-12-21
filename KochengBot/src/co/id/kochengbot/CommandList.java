@@ -245,6 +245,7 @@ public class CommandList extends ListenerAdapter {
 					"====================\n"+
 					"percaya\n"+
 					"perjaka\n"+
+					"permen\n"+
 					"pervert / perv"+
 					"pici / pc\n"+
 					"pride\n"+
@@ -2483,6 +2484,14 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
 		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "permen")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1054961968391397436/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		
 		//not listed yet
 	}
 }
