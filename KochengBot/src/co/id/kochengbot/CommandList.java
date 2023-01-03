@@ -84,6 +84,7 @@ public class CommandList extends ListenerAdapter {
 					"ewe / eue\n"+
 					"f2p\n"+
 					"faisal\n"+
+					"favorit\n"+
 					"fendet / gender\n"+
 					"fetis / fetish\n"+
 					"fubuki / fukuki / manual\n"+
@@ -113,7 +114,6 @@ public class CommandList extends ListenerAdapter {
 					"hijau\n"+
 					"hode\n"+
 					"hoki\n"+
-					"homa / atlas\n"+
 					"homo\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
@@ -230,7 +230,6 @@ public class CommandList extends ListenerAdapter {
 					"pece\n"+
 					"pegal\n"+
 					"pekok\n"+
-					"pendek\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -243,6 +242,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"pendek\n"+
 					"percaya\n"+
 					"perjaka\n"+
 					"permen\n"+
@@ -288,6 +288,7 @@ public class CommandList extends ListenerAdapter {
 					"tau\n"+
 					"telanjang / bugil\n"+
 					"telat\n"+
+					"tergantung\n"+
 					"terhura / terharu\n"+
 					"test\n"+
 					"tidur\n"+
@@ -1295,14 +1296,6 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "isep")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/815482469054152765/isep.jpg");
-			
-			event.getChannel().sendTyping().queue();
-			event.getChannel().sendMessageEmbeds(embed.build()).queue();
-		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "homa")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "atlas")) {
-			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/816280699661058068/tmp_1614686874600.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
@@ -2487,6 +2480,20 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "permen")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1054961968391397436/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "tergantung")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1057358476877250601/ea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "favorit")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1059640308830306344/ea.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
