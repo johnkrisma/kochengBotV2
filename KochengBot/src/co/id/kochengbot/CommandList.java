@@ -32,7 +32,7 @@ public class CommandList extends ListenerAdapter {
 					"baik\n"+
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
-					"banjir / fakta\n"+
+					"banjir / fakta / fanta\n"+
 					"baper / laper\n"+
 					"barbara / barabata / bandara\n"+
 					"benar\n"+
@@ -149,6 +149,7 @@ public class CommandList extends ListenerAdapter {
 					"kalah\n"+
 					"kangen\n"+
 					"kasar / laskar\n"+
+					"kasihan\n"+
 					"kawaii / kawai\n"+
 					"kaya\n"+
 					"kecoa\n"+
@@ -229,7 +230,6 @@ public class CommandList extends ListenerAdapter {
 					"pagi\n"+
 					"pece\n"+
 					"pegal\n"+
-					"pekok\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -242,6 +242,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"pekok\n"+
 					"pendek\n"+
 					"percaya\n"+
 					"perjaka\n"+
@@ -2086,7 +2087,8 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "banjir")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "fakta")) {
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "fakta")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "fanta")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/974288175440732170/download.png");
 			
@@ -2494,6 +2496,13 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "favorit")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1059640308830306344/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kasihan")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1060407233705418872/gadaakhlak-upin-ipin.gif");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
