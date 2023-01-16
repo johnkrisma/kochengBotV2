@@ -248,7 +248,7 @@ public class CommandList extends ListenerAdapter {
 					"percaya\n"+
 					"perjaka\n"+
 					"permen\n"+
-					"pervert / perv"+
+					"pervert / perv\n"+
 					"pici / pc\n"+
 					"pride\n"+
 					"ps5\n"+
@@ -282,6 +282,7 @@ public class CommandList extends ListenerAdapter {
 					"ss\n"+
 					"summon / cium\n"+
 					"sunat\n"+
+					"sunda\n"+
 					"susu\n"+
 					"taat / aturan\n"+
 					"tag\n"+
@@ -310,6 +311,7 @@ public class CommandList extends ListenerAdapter {
 					"typo / tipo\n"+
 					"umam\n"+
 					"update\n"+
+					"waduh\n"+
 					"wawasan\n"+
 					"welcome\n"+
 					"wibu\n"+
@@ -2511,6 +2513,20 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "jagoan")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1062734576658694205/ea.jpeg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sunda")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1064456943747481630/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "waduh")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1064500329695162479/eaea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
