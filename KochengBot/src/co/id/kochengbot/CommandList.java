@@ -63,6 +63,7 @@ public class CommandList extends ListenerAdapter {
 					"cupu / cupi / payah\n"+
 					"curang\n"+
 					"curhat\n"+
+					"dahulu\n"+
 					"damai\n"+
 					"dana\n"+
 					"darimana\n"+
@@ -114,7 +115,6 @@ public class CommandList extends ListenerAdapter {
 					"hijau\n"+
 					"hode\n"+
 					"hoki\n"+
-					"homo\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -128,6 +128,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"homo\n"+
 					"homuking\n"+
 					"hooh\n"+
 					"horny / hirji\n"+
@@ -228,8 +229,6 @@ public class CommandList extends ListenerAdapter {
 					"opini\n"+
 					"out / pelatih / pelatuh\n"+
 					"paansi / apasih / apasih / paansih / apaansih / apasi\n"+
-					"pagi\n"+
-					"pece\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -242,6 +241,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"pagi\n"+
+					"pece\n"+
 					"pegal\n"+
 					"pekok\n"+
 					"pendek\n"+
@@ -275,6 +276,7 @@ public class CommandList extends ListenerAdapter {
 					"sesat\n"+
 					"shap / siap\n"+
 					"sipaling\n"+
+					"slow\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
 					"sopan\n"+
@@ -2527,6 +2529,20 @@ public class CommandList extends ListenerAdapter {
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "waduh")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1064500329695162479/eaea.jpg");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "dahulu")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1066016551704215672/ea.png");
+			
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "slow")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1066320786404671548/ea.png");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
