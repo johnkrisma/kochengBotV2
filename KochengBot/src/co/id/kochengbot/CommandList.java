@@ -17,6 +17,7 @@ public class CommandList extends ListenerAdapter {
 					"3jt\n"+
 					"50k\n"+
 					"achievement / achivmen / acivmen / acimen\n"+
+					"ada\n"+
 					"astaga / astava / asfava\n"+
 					"ampas\n"+
 					"anal\n"+
@@ -114,7 +115,6 @@ public class CommandList extends ListenerAdapter {
 					"henceut\n"+
 					"hijau\n"+
 					"hode\n"+
-					"hoki\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -128,6 +128,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"hoki\n"+
 					"homo\n"+
 					"homuking\n"+
 					"hooh\n"+
@@ -228,7 +229,6 @@ public class CommandList extends ListenerAdapter {
 					"onat\n"+
 					"opini\n"+
 					"out / pelatih / pelatuh\n"+
-					"paansi / apasih / paansih / apaansih / apasi\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -241,12 +241,14 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"paansi / apasih / paansih / apaansih / apasi\n"+
 					"pagi\n"+
 					"pece\n"+
 					"pegal\n"+
 					"pekok\n"+
 					"pendek\n"+
 					"percaya\n"+
+					"pergi\n"+
 					"perjaka\n"+
 					"permen\n"+
 					"pervert / perv\n"+
@@ -2546,7 +2548,19 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
 		}
-		
-		//not listed yet
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "pergi")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1064502374829408366/ea.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "ada")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1064502375160762379/adaadasaja.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
 	}
 }
