@@ -228,7 +228,7 @@ public class CommandList extends ListenerAdapter {
 					"onat\n"+
 					"opini\n"+
 					"out / pelatih / pelatuh\n"+
-					"paansi / apasih / apasih / paansih / apaansih / apasi\n"+
+					"paansi / apasih / paansih / apaansih / apasi\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -454,12 +454,11 @@ public class CommandList extends ListenerAdapter {
 		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "apasih")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "paansi")
-				|| args[0].equalsIgnoreCase(KochengController.prefix + "apasih")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "paansih")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "apaansih")
 				|| args[0].equalsIgnoreCase(KochengController.prefix + "apasi")) {
 			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/812957426470486046/paansi.jpg");
+			embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1066326501097746432/ea.jpg");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
