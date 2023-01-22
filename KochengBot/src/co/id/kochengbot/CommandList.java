@@ -247,6 +247,7 @@ public class CommandList extends ListenerAdapter {
 					"pegal\n"+
 					"pekok\n"+
 					"pendek\n"+
+					"pepek\n"+
 					"percaya\n"+
 					"pergi\n"+
 					"perjaka\n"+
@@ -2562,5 +2563,13 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "pepek")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1066628517644746812/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        
 	}
 }
