@@ -138,6 +138,7 @@ public class CommandList extends ListenerAdapter {
 					"ingat / tobat\n"+
 					"insekyur\n"+
 					"isep\n"+
+					"iya\n"+
 					"janji\n"+
 					"jaog / jago / ampun / seram / sram / sramz\n"+
 					"jagoan\n"+
@@ -227,7 +228,6 @@ public class CommandList extends ListenerAdapter {
 					"ok\n"+
 					"om\n"+
 					"onat\n"+
-					"opini\n"+
 					"out / pelatih / pelatuh\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
@@ -241,6 +241,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"opini\n"+
 					"paansi / apasih / paansih / apaansih / apasi\n"+
 					"pagi\n"+
 					"pece\n"+
@@ -314,6 +315,7 @@ public class CommandList extends ListenerAdapter {
 					"tusuk\n"+
 					"ty / thx / thanks\n"+
 					"typo / tipo\n"+
+					"udah\n"+
 					"umam\n"+
 					"update\n"+
 					"waduh\n"+
@@ -2566,6 +2568,20 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "pepek")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1066628517644746812/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "udah")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1072751258651344947/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "iya")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1072793474555981865/eaeaea.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
