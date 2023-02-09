@@ -267,6 +267,7 @@ public class CommandList extends ListenerAdapter {
 					"ribut / ribiw\n"+
 					"rog\n"+
 					"sahabat\n"+
+					"salam\n"+
 					"salto\n"+
 					"sange / sangean\n"+
 					"saoi\n"+
@@ -304,6 +305,7 @@ public class CommandList extends ListenerAdapter {
 					"tingkahmu\n"+
 					"titit / titid\n"+
 					"tolak\n"+
+					"tolong\n"+
 					"tovat\n"+
 					"tomay / tomat\n"+
 					"toxic / toksik\n"+
@@ -2586,6 +2588,19 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
-        
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "tolong")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1073088909359206400/eaea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "salam")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1073089019090571294/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
 	}
 }
