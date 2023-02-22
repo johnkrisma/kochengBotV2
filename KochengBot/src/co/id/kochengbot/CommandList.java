@@ -24,6 +24,7 @@ public class CommandList extends ListenerAdapter {
 					"anj / anjg / ajg / anjing\n"+
 					"anjay\n"+
 					"anjim\n"+
+					"asu\n"+
 					"atitut\n"+
 					"ayaka\n"+
 					"babi\n"+
@@ -114,7 +115,6 @@ public class CommandList extends ListenerAdapter {
 					"hdmi\n"+
 					"henceut\n"+
 					"hijau\n"+
-					"hode\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -128,6 +128,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"hode\n"+
 					"hoki\n"+
 					"homo\n"+
 					"homuking\n"+
@@ -160,6 +161,7 @@ public class CommandList extends ListenerAdapter {
 					"kekar\n"+
 					"kentu\n"+
 					"keqing\n"+
+					"keren\n"+
 					"ketua\n"+
 					"kihomo\n"+
 					"kimpeha\n"+
@@ -227,8 +229,6 @@ public class CommandList extends ListenerAdapter {
 					"ocincin\n"+
 					"ok\n"+
 					"om\n"+
-					"onat\n"+
-					"out / pelatih / pelatuh\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -241,6 +241,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"onat\n"+
+					"out / pelatih / pelatuh\n"+
 					"opini\n"+
 					"paansi / apasih / paansih / apaansih / apasi\n"+
 					"pagi\n"+
@@ -270,6 +272,7 @@ public class CommandList extends ListenerAdapter {
 					"salam\n"+
 					"salto\n"+
 					"sange / sangean\n"+
+					"santai\n"+
 					"saoi\n"+
 					"sarapan\n"+
 					"sarjana / ekonomi\n"+
@@ -2602,5 +2605,20 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "santai")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1077439434527604826/eaea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "asu")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1077828828698779698/ea.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        
 	}
 }
