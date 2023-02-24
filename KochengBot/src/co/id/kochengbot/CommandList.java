@@ -211,6 +211,7 @@ public class CommandList extends ListenerAdapter {
 					"nangis\n"+
 					"nabung\n"+
 					"nahida\n"+
+					"nanya\n"+
 					"nasgor\n"+
 					"nenen\n"+
 					"ngambek\n"+
@@ -228,7 +229,6 @@ public class CommandList extends ListenerAdapter {
 					"nyimak\n"+
 					"ocincin\n"+
 					"ok\n"+
-					"om\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -241,6 +241,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"om\n"+
 					"onat\n"+
 					"out / pelatih / pelatuh\n"+
 					"opini\n"+
@@ -2622,6 +2623,13 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "asu")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1077828828698779698/ea.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "nanya")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1078480580301295626/ea.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
