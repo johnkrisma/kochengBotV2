@@ -97,6 +97,7 @@ public class CommandList extends ListenerAdapter {
 					"gangbang\n"+
 					"gatal / gatel\n"+
 					"gay\n"+
+					"gegabah\n"+
 					"geh\n"+
 					"gei\n"+
 					"gem\n"+
@@ -114,7 +115,6 @@ public class CommandList extends ListenerAdapter {
 					"hayo\n"+
 					"hdmi\n"+
 					"henceut\n"+
-					"hijau\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -128,6 +128,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"hijau\n"+
 					"hode\n"+
 					"hoki\n"+
 					"homo\n"+
@@ -228,7 +229,6 @@ public class CommandList extends ListenerAdapter {
 					"nyambung\n"+
 					"nyimak\n"+
 					"ocincin\n"+
-					"ok\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -241,6 +241,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"ok\n"+
 					"om\n"+
 					"onat\n"+
 					"out / pelatih / pelatuh\n"+
@@ -2630,6 +2631,13 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "nanya")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1078480580301295626/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "gegabah")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1080289100608851998/ea.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
