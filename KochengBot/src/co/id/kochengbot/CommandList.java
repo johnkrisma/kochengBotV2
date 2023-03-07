@@ -329,6 +329,7 @@ public class CommandList extends ListenerAdapter {
 					"wawasan\n"+
 					"welcome\n"+
 					"wibu\n"+
+					"wleo\n"+
 					"woi\n"+
 					"woo / pantek\n"+
 					"xingqiu / xing\n"+
@@ -2638,6 +2639,13 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "gegabah")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1080289100608851998/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "wleo")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1082588496893583441/ea.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
