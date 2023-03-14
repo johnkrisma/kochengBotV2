@@ -18,12 +18,13 @@ public class CommandList extends ListenerAdapter {
 					"50k\n"+
 					"achievement / achivmen / acivmen / acimen\n"+
 					"ada\n"+
-					"astaga / astava / asfava\n"+
+					"allahu\n"+
 					"ampas\n"+
 					"anal\n"+
 					"anj / anjg / ajg / anjing\n"+
 					"anjay\n"+
 					"anjim\n"+
+					"astaga / astava / asfava\n"+
 					"asu\n"+
 					"atitut\n"+
 					"ayaka\n"+
@@ -114,7 +115,6 @@ public class CommandList extends ListenerAdapter {
 					"harem\n"+
 					"hayo\n"+
 					"hdmi\n"+
-					"henceut\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -128,6 +128,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"henceut\n"+
 					"hijau\n"+
 					"hode\n"+
 					"hoki\n"+
@@ -201,6 +202,7 @@ public class CommandList extends ListenerAdapter {
 					"mengheningkan\n"+
 					"mention\n"+
 					"meo / memeo\n"+
+					"mindset\n"+
 					"minta / bagi\n"+
 					"miskin\n"+
 					"mobil\n"+
@@ -228,7 +230,6 @@ public class CommandList extends ListenerAdapter {
 					"ntr\n"+
 					"nyambung\n"+
 					"nyimak\n"+
-					"ocincin\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -241,6 +242,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"ocincin\n"+
 					"ok\n"+
 					"om\n"+
 					"onat\n"+
@@ -2650,6 +2652,19 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
-        
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "mindset")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1085127791760125982/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "allahu")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1085127792192127056/eaea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
 	}
 }
