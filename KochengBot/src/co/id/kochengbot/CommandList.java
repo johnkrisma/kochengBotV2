@@ -186,6 +186,7 @@ public class CommandList extends ListenerAdapter {
 					"lemah\n"+
 					"lengah\n"+
 					"leyline\n"+
+					"like / likes / laiks\n"+
 					"login\n"+
 					"lonte / kobte\n"+
 					"lucu\n"+
@@ -213,6 +214,7 @@ public class CommandList extends ListenerAdapter {
 					"monyet\n"+
 					"muak\n"+
 					"mulai\n"+
+					"mw\n"+
 					"nangis\n"+
 					"nabung\n"+
 					"nahida\n"+
@@ -228,8 +230,6 @@ public class CommandList extends ListenerAdapter {
 					"ngocok\n"+
 					"ngontol\n"+
 					"nguli\n"+
-					"npc\n"+
-					"ntr\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -242,6 +242,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"npc\n"+
+					"ntr\n"+
 					"nyambung\n"+
 					"nyimak\n"+
 					"ocincin\n"+
@@ -2686,6 +2688,22 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "batang")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1091980692952469554/ea.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "mw")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1092351228962418748/aku_jg_mw.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "like")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "likes")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "laiks")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1094885231888175144/ea.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
