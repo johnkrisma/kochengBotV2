@@ -293,6 +293,7 @@ public class CommandList extends ListenerAdapter {
 					"sesat\n"+
 					"shap / siap\n"+
 					"sipaling\n"+
+					"skill\n"+
 					"slow\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
@@ -2716,6 +2717,12 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
-        
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "skill")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1095723127826292846/ea.gif");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
 	}
 }
