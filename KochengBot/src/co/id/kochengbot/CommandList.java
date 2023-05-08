@@ -1,6 +1,18 @@
 package co.id.kochengbot;
 
+import java.time.Duration;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import org.jetbrains.annotations.NotNull;
+
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.events.ReadyEvent;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -51,6 +63,7 @@ public class CommandList extends ListenerAdapter {
 					"bomat / gapeduli\n"+
 					"bosan\n"+
 					"burung\n"+
+					"bye\n"+
 					"canda\n"+
 					"capek\n"+
 					"cayman / cemen\n"+
@@ -79,6 +92,7 @@ public class CommandList extends ListenerAdapter {
 					"dokter\n"+
 					"dompet\n"+
 					"duit / duid\n"+
+					"eee\n"+
 					"elit\n"+
 					"elus\n"+
 					"emek\n"+
@@ -113,8 +127,6 @@ public class CommandList extends ListenerAdapter {
 					"hak\n"+
 					"hamil\n"+
 					"hantu\n"+
-					"harem\n"+
-					"hayo\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -128,6 +140,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"harem\n"+
+					"hayo\n"+
 					"hdmi\n"+
 					"henceut\n"+
 					"hijau\n"+
@@ -228,8 +242,6 @@ public class CommandList extends ListenerAdapter {
 					"ngentod / ngentot\n"+
 					"ngeri\n"+
 					"ngeyel\n"+
-					"ngocok\n"+
-					"ngontol\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -242,6 +254,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"ngocok\n"+
+					"ngontol\n"+
 					"nguli\n"+
 					"npc\n"+
 					"ntr\n"+
@@ -2732,6 +2746,60 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "bye")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1102908537308446740/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "eee")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1103250449269792778/eee.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
         
+	}
+	
+	public void onReady(@NotNull ReadyEvent event) {
+		
+	    ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Asia/Tokyo"));
+	    ZonedDateTime nextFirstLesson = now.withHour(1).withMinute(0).withSecond(0);
+	    if (now.compareTo(nextFirstLesson) > 0) {
+	        nextFirstLesson = nextFirstLesson.plusDays(1);
+	    }
+
+	    // duration between now and the beginning of the next first lesson
+	    Duration durationUntilFirstLesson = Duration.between(now, nextFirstLesson);
+	    // in seconds
+	    long initialDelay = durationUntilFirstLesson.getSeconds();
+
+	    // schedules the reminder at a fixed rate of one day
+	    ScheduledExecutorService schedulerFirstLesson = Executors.newScheduledThreadPool(1);
+	    schedulerFirstLesson.scheduleAtFixedRate(new Runnable() {
+	    	public void run() {
+	    		try {
+			        JDA jda = event.getJDA();
+			        Guild guild = jda.getGuildById("764360360047542293");
+			        
+			        guild.getTextChannelById("1101987461816655882").sendMessage("<@&1102931736792408064>").queue();
+			        
+			        EmbedBuilder embed = new EmbedBuilder();
+			        embed.setTitle("Daily Web Login Reminder");
+			        embed.setDescription("Halo, Trailblazers! Jangan lupa log in daily di HoYoLAB ya, click linknya ***SEKARANG*** biar gak lupa:\r\n"
+			        		+ "\r\n"
+			        		+ "https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e202303301540311&bbs_auth_required=true&bbs_presentation_style=fullscreen&lang=id-id&utm_source=share&utm_medium=hoyolab&utm_campaign=app");
+		            embed.setImage("https://upload-os-bbs.hoyolab.com/upload/2023/04/17/65d6ab931ddde1095a28c2aebe3852ce_1330164747074143287.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png");
+		            
+		            guild.getTextChannelById("1101987461816655882").sendMessageEmbeds(embed.build()).queue();
+			        
+	    		} catch (Exception e) {
+	    			e.printStackTrace();
+	    		}
+		        
+	    	}
+	    }, initialDelay, 100, TimeUnit.SECONDS);
 	}
 }
