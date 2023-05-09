@@ -2800,6 +2800,6 @@ public class CommandList extends ListenerAdapter {
 	    		}
 		        
 	    	}
-	    }, initialDelay, 100, TimeUnit.SECONDS);
+	    }, initialDelay, 86400, TimeUnit.SECONDS);
 	}
 }
