@@ -84,6 +84,7 @@ public class CommandList extends ListenerAdapter {
 					"damai\n"+
 					"dana\n"+
 					"darimana\n"+
+					"datang\n"+
 					"dek\n"+
 					"des\n"+
 					"dev / fandom\n"+
@@ -2760,7 +2761,13 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
-        
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "datang")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1107199791563276340/ea.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
 	}
 	
 	public void onReady(@NotNull ReadyEvent event) {
