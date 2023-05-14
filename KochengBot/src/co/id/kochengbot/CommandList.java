@@ -43,6 +43,7 @@ public class CommandList extends ListenerAdapter {
 					"babi\n"+
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
 					"badut\n"+
+					"bagaimana\n"+
 					"bagus\n"+
 					"baik\n"+
 					"baiwan / bewan / byone\n"+
@@ -2768,6 +2769,14 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "bagaimana")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1107284385650184192/bagaimana_mungkin.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        
 	}
 	
 	public void onReady(@NotNull ReadyEvent event) {
