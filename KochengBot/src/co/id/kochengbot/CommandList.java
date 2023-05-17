@@ -127,8 +127,6 @@ public class CommandList extends ListenerAdapter {
 					"goblog / goblok \n"+
 					"hadeh\n"+
 					"hak\n"+
-					"hamil\n"+
-					"hantu\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -142,6 +140,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"hamil\n"+
+					"hantu\n"+
 					"harem\n"+
 					"hayo\n"+
 					"hdmi\n"+
@@ -158,6 +158,7 @@ public class CommandList extends ListenerAdapter {
 					"ingat / tobat\n"+
 					"insekyur\n"+
 					"isep\n"+
+					"item\n"+
 					"iya\n"+
 					"janji\n"+
 					"jaog / jago / ampun / seram / sram / sramz\n"+
@@ -240,10 +241,6 @@ public class CommandList extends ListenerAdapter {
 					"ngambek\n"+
 					"ngangkang\n"+
 					"ngantuk\n"+
-					"ngemut\n"+
-					"ngentod / ngentot\n"+
-					"ngeri\n"+
-					"ngeyel\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -256,6 +253,10 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"ngemut\n"+
+					"ngentod / ngentot\n"+
+					"ngeri\n"+
+					"ngeyel\n"+
 					"ngocok\n"+
 					"ngontol\n"+
 					"nguli\n"+
@@ -353,6 +354,18 @@ public class CommandList extends ListenerAdapter {
 					"update\n"+
 					"waduh\n"+
 					"wawasan\n"+
+					"====================\n"+
+					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
+					);
+		event.getChannel().sendTyping().queue();
+		event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "list4")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setTitle("Command List Kocheng");
+			embed.setDescription(
+					"====================\n"+
 					"welcome\n"+
 					"wibu\n"+
 					"wleo\n"+
@@ -2772,6 +2785,13 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "bagaimana")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1107284385650184192/bagaimana_mungkin.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "item")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1108243822468673588/ea.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
