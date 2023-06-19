@@ -270,8 +270,9 @@ public class CommandList extends ListenerAdapter {
 					"ok\n"+
 					"om\n"+
 					"onat\n"+
-					"out / pelatih / pelatuh\n"+
 					"opini\n"+
+					"otw\n"+
+					"out / pelatih / pelatuh\n"+
 					"paansi / apasih / paansih / apaansih / apasi\n"+
 					"pagi\n"+
 					"pece\n"+
@@ -2820,6 +2821,14 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "otw")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1119425469486477402/FB_IMG_1686903054618.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        
 	}
 	
 	public void onReady(@NotNull ReadyEvent event) {
