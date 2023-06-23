@@ -233,6 +233,7 @@ public class CommandList extends ListenerAdapter {
 					"monyet\n"+
 					"muak\n"+
 					"mulai\n"+
+					"murka\n"+
 					"mw\n"+
 					"nangis\n"+
 					"nabung\n"+
@@ -240,7 +241,6 @@ public class CommandList extends ListenerAdapter {
 					"nanya\n"+
 					"nasgor\n"+
 					"nenen\n"+
-					"ngambek\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -253,6 +253,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"ngambek\n"+
 					"ngangkang\n"+
 					"ngantuk\n"+
 					"ngemut\n"+
@@ -2828,7 +2829,13 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
-        
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "murka")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1121614913010409563/sticker-fan_11861203_o.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
 	}
 	
 	public void onReady(@NotNull ReadyEvent event) {
