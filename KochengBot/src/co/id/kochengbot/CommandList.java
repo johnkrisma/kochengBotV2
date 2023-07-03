@@ -329,6 +329,7 @@ public class CommandList extends ListenerAdapter {
 					"susu\n"+
 					"taat / aturan\n"+
 					"tag\n"+
+					"tai\n"+
 					"takut\n"+
 					"tani / thamngan\n"+
 					"tau\n"+
@@ -355,7 +356,6 @@ public class CommandList extends ListenerAdapter {
 					"typo / tipo\n"+
 					"udah\n"+
 					"umam\n"+
-					"update\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
 					);
@@ -368,6 +368,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"update\n"+
 					"waduh\n"+
 					"wawasan\n"+
 					"welcome\n"+
@@ -2836,6 +2837,14 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "tai")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1123216702629490688/IMG-20230627-WA0021.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        
 	}
 	
 	public void onReady(@NotNull ReadyEvent event) {
@@ -2865,7 +2874,10 @@ public class CommandList extends ListenerAdapter {
 			        embed.setTitle("Daily Web Login Reminder");
 			        embed.setDescription("Halo, Trailblazers! Jangan lupa log in daily di HoYoLAB ya, click linknya ***SEKARANG*** biar gak lupa:\r\n"
 			        		+ "\r\n"
-			        		+ "https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e202303301540311&bbs_auth_required=true&bbs_presentation_style=fullscreen&lang=id-id&utm_source=share&utm_medium=hoyolab&utm_campaign=app");
+			        		+ "https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e202303301540311&bbs_auth_required=true&bbs_presentation_style=fullscreen&lang=id-id&utm_source=share&utm_medium=hoyolab&utm_campaign=app\r\n");
+//			        		+ "\r\n"
+//			        		+ "Juga jangan lupa ikuti web event:\r\n"
+//			        		+ "https://t.co/lfthRhOY6j");
 		            embed.setImage("https://upload-os-bbs.hoyolab.com/upload/2023/04/17/65d6ab931ddde1095a28c2aebe3852ce_1330164747074143287.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png");
 		            
 		            guild.getTextChannelById("1101987461816655882").sendMessageEmbeds(embed.build()).queue();
