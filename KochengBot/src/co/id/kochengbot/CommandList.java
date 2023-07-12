@@ -2860,6 +2860,11 @@ public class CommandList extends ListenerAdapter {
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
+            
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1128696110907666535/20230712_183846.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
         if(args[0].equalsIgnoreCase(KochengController.prefix + "ngopi")) {
             EmbedBuilder embed = new EmbedBuilder();
