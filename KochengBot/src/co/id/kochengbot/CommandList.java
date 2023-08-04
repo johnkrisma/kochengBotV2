@@ -93,6 +93,7 @@ public class CommandList extends ListenerAdapter {
 					"dev / fandom\n"+
 					"diem / diam\n"+
 					"dildo\n"+
+					"dislike\n"+
 					"dokter\n"+
 					"dompet\n"+
 					"duit / duid\n"+
@@ -126,7 +127,6 @@ public class CommandList extends ListenerAdapter {
 					"gila\n"+
 					"gigit\n"+
 					"gitar\n"+
-					"goblog / goblok \n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -140,6 +140,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"goblog / goblok \n"+
 					"hadeh\n"+
 					"hak\n"+
 					"hamil\n"+
@@ -240,7 +241,6 @@ public class CommandList extends ListenerAdapter {
 					"nabung\n"+
 					"nahida\n"+
 					"nanya\n"+
-					"nasgor\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -253,6 +253,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"nasgor\n"+
 					"nenen\n"+
 					"ngambek\n"+
 					"ngangkang\n"+
@@ -301,7 +302,6 @@ public class CommandList extends ListenerAdapter {
 					"retry / tetty\n"+
 					"ribut / ribiw\n"+
 					"rog\n"+
-					"sahabat\n"+
 					"salam\n"+
 					"salto\n"+
 					"sange / sangean\n"+
@@ -1631,13 +1631,6 @@ public class CommandList extends ListenerAdapter {
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embed.build()).queue();
 		}
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "sahabat")) {
-			EmbedBuilder embed = new EmbedBuilder();
-			embed.setImage("https://cdn.discordapp.com/attachments/797114259149553724/819280123743436830/Screenshot_20210311-012920_Discord.jpg");
-			
-			event.getChannel().sendTyping().queue();
-			event.getChannel().sendMessageEmbeds(embed.build()).queue();
-		}
 		if(args[0].equalsIgnoreCase(KochengController.prefix + "mabar")) {
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage("https://cdn.discordapp.com/attachments/764373155313221632/819444604755509288/IMG_20210311_123853.jpg");
@@ -2869,6 +2862,13 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "ngopi")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1128684352386125874/360086861_1997266183943600_4301115358852948335_n.png");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "dislike")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1134421498896068638/1672227997095.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
