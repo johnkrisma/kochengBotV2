@@ -174,6 +174,7 @@ public class CommandList extends ListenerAdapter {
 					"jodoh\n"+
 					"jokowi\n"+
 					"jumatan\n"+
+					"kafka\n"+
 					"kalah\n"+
 					"kangen\n"+
 					"kasar / laskar\n"+
@@ -240,7 +241,6 @@ public class CommandList extends ListenerAdapter {
 					"nangis\n"+
 					"nabung\n"+
 					"nahida\n"+
-					"nanya\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -253,6 +253,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"nanya\n"+
 					"nasgor\n"+
 					"nenen\n"+
 					"ngambek\n"+
@@ -355,7 +356,6 @@ public class CommandList extends ListenerAdapter {
 					"tumdur / bobo\n"+
 					"tusbol\n"+
 					"tusuk\n"+
-					"ty / thx / thanks\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
 					);
@@ -368,6 +368,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"ty / thx / thanks\n"+
 					"typo / tipo\n"+
 					"udah\n"+
 					"umam\n"+
@@ -2869,6 +2870,13 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "dislike")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1134421498896068638/1672227997095.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "kafka")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1138789292685144114/Screenshot_20230809_175616_Instagram.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
