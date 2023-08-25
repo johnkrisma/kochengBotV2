@@ -270,6 +270,7 @@ public class CommandList extends ListenerAdapter {
 					"npc\n"+
 					"ntr\n"+
 					"nyambung\n"+
+					"nyerah\n"+
 					"nyimak\n"+
 					"ocincin\n"+
 					"ok\n"+
@@ -355,7 +356,6 @@ public class CommandList extends ListenerAdapter {
 					"tt / tete\n"+
 					"tumdur / bobo\n"+
 					"tusbol\n"+
-					"tusuk\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
 					);
@@ -368,6 +368,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"tusuk\n"+
 					"ty / thx / thanks\n"+
 					"typo / tipo\n"+
 					"udah\n"+
@@ -2877,6 +2878,13 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "kafka")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1138789292685144114/Screenshot_20230809_175616_Instagram.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "nyerah")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1144477150091677706/images_7.jpg");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
