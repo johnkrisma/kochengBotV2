@@ -112,6 +112,7 @@ public class CommandList extends ListenerAdapter {
 					"fendet / gender\n"+
 					"fetis / fetish\n"+
 					"fubuki / fukuki / manual\n"+
+					"furry / furi\n"+
 					"gacha\n"+
 					"gaguna\n"+
 					"gakreatif\n"+
@@ -126,7 +127,6 @@ public class CommandList extends ListenerAdapter {
 					"gesek\n"+
 					"gila\n"+
 					"gigit\n"+
-					"gitar\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -140,6 +140,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"gitar\n"+
 					"goblog / goblok \n"+
 					"hadeh\n"+
 					"hak\n"+
@@ -240,7 +241,6 @@ public class CommandList extends ListenerAdapter {
 					"mw\n"+
 					"nangis\n"+
 					"nabung\n"+
-					"nahida\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -253,6 +253,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"nahida\n"+
 					"nanya\n"+
 					"nasgor\n"+
 					"nenen\n"+
@@ -355,7 +356,6 @@ public class CommandList extends ListenerAdapter {
 					"tri\n"+
 					"tt / tete\n"+
 					"tumdur / bobo\n"+
-					"tusbol\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
 					);
@@ -368,6 +368,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"tusbol\n"+
 					"tusuk\n"+
 					"ty / thx / thanks\n"+
 					"typo / tipo\n"+
@@ -2885,6 +2886,14 @@ public class CommandList extends ListenerAdapter {
         if(args[0].equalsIgnoreCase(KochengController.prefix + "nyerah")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1144477150091677706/images_7.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "furry")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "furi")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1146333927695466506/image.png");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
