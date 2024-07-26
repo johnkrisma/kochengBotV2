@@ -30,16 +30,18 @@ public class CommandList extends ListenerAdapter {
 					"50k\n"+
 					"achievement / achivmen / acivmen / acimen\n"+
 					"ada\n"+
+					"alhamdulillah / alhamdulilah\n"+
 					"allahu\n"+
 					"ampas\n"+
 					"anal\n"+
 					"anj / anjg / ajg / anjing\n"+
 					"anjay\n"+
 					"anjim\n"+
-					"apcb (new)\n"+
+					"apcb \n"+
 					"astaga / astava / asfava\n"+
 					"asu\n"+
 					"atitut\n"+
+					"awas\n"+
 					"ayaka\n"+
 					"babi\n"+
 					"bacot / nacot / bavot / baxot / vagot / bagot\n"+
@@ -50,6 +52,7 @@ public class CommandList extends ListenerAdapter {
 					"baiwan / bewan / byone\n"+
 					"balon / balonku\n"+
 					"banjir / fakta / fanta\n"+
+					"banyak\n"+
 					"baper / laper\n"+
 					"barbara / barabata / bandara\n"+
 					"batang\n"+
@@ -95,7 +98,7 @@ public class CommandList extends ListenerAdapter {
 					"dev / fandom\n"+
 					"diem / diam\n"+
 					"dildo\n"+
-					"dipikir (new)\n"+
+					"dipikir \n"+
 					"dislike\n"+
 					"dokter\n"+
 					"dompet\n"+
@@ -119,14 +122,11 @@ public class CommandList extends ListenerAdapter {
 					"gacha\n"+
 					"gaguna\n"+
 					"gakreatif\n"+
+					"gakmau / gamau\n"+
 					"gangbang\n"+
 					"gatal / gatel\n"+
 					"gay\n"+
 					"gegabah\n"+
-					"geh\n"+
-					"gei\n"+
-					"gem\n"+
-					"genshin\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -140,13 +140,19 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"geh\n"+
+					"gei\n"+
+					"gem\n"+
+					"genshin\n"+
 					"gesek\n"+
 					"gila\n"+
 					"gigit\n"+
 					"gitar\n"+
+					"gk\n"+
 					"goblog / goblok \n"+
 					"hadeh\n"+
 					"hak\n"+
+					"halah\n"+
 					"hamil\n"+
 					"hantu\n"+
 					"harem\n"+
@@ -154,6 +160,7 @@ public class CommandList extends ListenerAdapter {
 					"hdmi\n"+
 					"henceut\n"+
 					"hijau\n"+
+					"hitam\n"+
 					"hode\n"+
 					"hoki\n"+
 					"homo\n"+
@@ -165,13 +172,14 @@ public class CommandList extends ListenerAdapter {
 					"ingat / tobat\n"+
 					"insekyur\n"+
 					"isep\n"+
-					"istigfar / istighfar (new)\n"+
+					"istigfar / istighfar \n"+
 					"item\n"+
 					"iwak\n"+
 					"iya\n"+
 					"janji\n"+
 					"jaog / jago / ampun / seram / sram / sramz\n"+
 					"jagoan\n"+
+					"jawab / jawap\n"+
 					"jelata\n"+
 					"jelek\n"+
 					"jembut / jembud\n"+
@@ -180,9 +188,11 @@ public class CommandList extends ListenerAdapter {
 					"jodoh\n"+
 					"jokowi\n"+
 					"jumatan\n"+
+					"kadang / terkadang\n"+
 					"kafka\n"+
 					"kalah\n"+
 					"kangen\n"+
+					"karbit\n"+
 					"kasar / laskar\n"+
 					"kasihan\n"+
 					"kau\n"+
@@ -194,8 +204,8 @@ public class CommandList extends ListenerAdapter {
 					"kentu\n"+
 					"keqing\n"+
 					"keren\n"+
-					"kesalahan (new)\n"+
-					"ketar (new)\n"+
+					"kesalahan \n"+
+					"ketar \n"+
 					"ketua\n"+
 					"kihomo\n"+
 					"kimpeha\n"+
@@ -217,6 +227,7 @@ public class CommandList extends ListenerAdapter {
 					"lemah\n"+
 					"lengah\n"+
 					"leyline\n"+
+					"liat\n"+
 					"like / likes / laiks\n"+
 					"logika\n"+
 					"login\n"+
@@ -230,17 +241,6 @@ public class CommandList extends ListenerAdapter {
 					"masuk\n"+
 					"mati\n"+
 					"mei / mei kita / mei gue\n"+
-					"melas\n"+
-					"membuahi\n"+
-					"memek\n"+
-					"mending\n"+
-					"mengheningkan\n"+
-					"mention\n"+
-					"menyesal (new)\n"+
-					"meo / memeo\n"+
-					"miaw\n"+
-					"mindset\n"+
-					"minta / bagi\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -253,6 +253,17 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"melas\n"+
+					"membuahi\n"+
+					"memek\n"+
+					"mending\n"+
+					"mengheningkan\n"+
+					"mention\n"+
+					"menyesal \n"+
+					"meo / memeo\n"+
+					"miaw\n"+
+					"mindset\n"+
+					"minta / bagi\n"+
 					"miskin\n"+
 					"mobil\n"+
 					"monthly\n"+
@@ -268,8 +279,8 @@ public class CommandList extends ListenerAdapter {
 					"nanya\n"+
 					"nasgor\n"+
 					"nenen\n"+
-					"ngakak (new)\n"+
-					"ngambek (new)\n"+
+					"ngakak \n"+
+					"ngambek \n"+
 					"ngangkang\n"+
 					"ngantuk\n"+
 					"ngemut\n"+
@@ -277,6 +288,7 @@ public class CommandList extends ListenerAdapter {
 					"ngeri\n"+
 					"ngeyel\n"+
 					"ngocok\n"+
+					"ngomong\n"+
 					"ngontol\n"+
 					"ngopi\n"+
 					"nguli\n"+
@@ -298,6 +310,8 @@ public class CommandList extends ListenerAdapter {
 					"pegal\n"+
 					"pekok\n"+
 					"pendek\n"+
+					"pendidikan\n"+
+					"penis\n"+
 					"pepek\n"+
 					"percaya\n"+
 					"pergi\n"+
@@ -305,6 +319,7 @@ public class CommandList extends ListenerAdapter {
 					"permen\n"+
 					"pervert / perv\n"+
 					"pici / pc\n"+
+					"pikir / pikirkan\n"+
 					"pride\n"+
 					"prinsip\n"+
 					"ps5\n"+
@@ -330,7 +345,7 @@ public class CommandList extends ListenerAdapter {
 					"selaw\n"+
 					"sempit\n"+
 					"seno\n"+
-					"senyum (new)\n"+
+					"senyum \n"+
 					"sepuh\n"+
 					"sesat\n"+
 					"shap / siap\n"+
@@ -341,6 +356,18 @@ public class CommandList extends ListenerAdapter {
 					"sodok\n"+
 					"sopan\n"+
 					"sore\n"+
+					"====================\n"+
+					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
+					);
+		event.getChannel().sendTyping().queue();
+		event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "list4")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setTitle("Command List Kocheng");
+			embed.setDescription(
+					"====================\n"+
 					"ss\n"+
 					"sulit\n"+
 					"summon / cium\n"+
@@ -356,19 +383,8 @@ public class CommandList extends ListenerAdapter {
 					"telanjang / bugil\n"+
 					"telat\n"+
 					"tergantung\n"+
-					"====================\n"+
-					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
-					);
-		event.getChannel().sendTyping().queue();
-		event.getChannel().sendMessageEmbeds(embed.build()).queue();
-		}
-		
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "list4")) {
-			EmbedBuilder embed = new EmbedBuilder();
-			embed.setTitle("Command List Kocheng");
-			embed.setDescription(
-					"====================\n"+
 					"terhura / terharu\n"+
+					"terpukul\n"+
 					"test\n"+
 					"tewas\n"+
 					"tidur\n"+
@@ -390,6 +406,7 @@ public class CommandList extends ListenerAdapter {
 					"udah\n"+
 					"umam\n"+
 					"update\n"+
+					"valid\n"+
 					"waduh\n"+
 					"wawasan\n"+
 					"welcome\n"+
@@ -400,6 +417,7 @@ public class CommandList extends ListenerAdapter {
 					"xingqiu / xing\n"+
 					"yan / jajan\n"+
 					"yanfei\n"+
+					"yanto\n"+
 					"yes\n"+
 					"yoga\n"+
 					"yuri\n"+
@@ -2647,7 +2665,7 @@ public class CommandList extends ListenerAdapter {
         }
         if(args[0].equalsIgnoreCase(KochengController.prefix + "iya")) {
             EmbedBuilder embed = new EmbedBuilder();
-            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1072793474555981865/eaeaea.jpg");
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1220671296350720101/432923708_285450184587483_3633676558330917373_n.png?ex=660fc9bc&is=65fd54bc&hm=5e3440f1cf9b3f3a38eea59e5bfbb318d34a4264c5fd441c5e14bdf4113fdad6&");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
@@ -3027,7 +3045,145 @@ public class CommandList extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
         }
-        
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "liat")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1194117807927988308/IMG_20240103_004740.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "alhamdulillah")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "alhamdulilah")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1205364147965927454/blue-archive-takanashi-hoshino.gif");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "penis")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1210207471390425168/FB_IMG_1708600498731.jpg");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "valid")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1220671773234692158/FB_IMG_1711058712910.jpg?ex=660fca2d&is=65fd552d&hm=4a304bfa7a578185b5597f32e277f8fa479e0d7588d2f90873d7c31be046c7a2&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "yanto")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1222141448913162291/IMG_20240326_122206.png?ex=661522eb&is=6602adeb&hm=f1439cbe459a44662ff9e19a2f3625d047b7eb9e13e6ba499a0cd1d297e5bedb&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "ngomong")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1224255484845101116/image.png?ex=661cd3c5&is=660a5ec5&hm=cf219e4ee312b60ec7db96bb859c0a8ce7b2e6ae60cff9fe521ebe59b8c39f89&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "pendidikan")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1224255614411341884/image.png?ex=661cd3e4&is=660a5ee4&hm=9e966ee38530ee4f916f754d61f39db81142087c42bd7f126ea3636012a0a8b8&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "banyak")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1224256218957221888/img_1_1710842819990.jpg?ex=661cd474&is=660a5f74&hm=0994fb4e79ae7d4e479166583f10f62c1a69470d630f28583d2536e734654787&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "terpukul")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1225011558204182589/FB_IMG_1712133778988.jpg?ex=661f93eb&is=660d1eeb&hm=7e4e38680496f04739f678205e602a54a8e7785a072ecfb74c57001065fcf0be&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "karbit")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1232653759436296252/FB_IMG_1713378933611.jpg?ex=662a3dc5&is=6628ec45&hm=356209bb433dd06eb7fbab7da1a5c75a7a84fdd851597f2fddd78668c1a9c652&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "gamau") ||
+        		args[0].equalsIgnoreCase(KochengController.prefix + "gakmau")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1232899534544175164/FB_IMG_1685866419252.jpg?ex=662b22ab&is=6629d12b&hm=0590c04ec23c7b234714caf6db4fcb2b7b77b33e66ec7d1060b9b5882f97e627&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "awas")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1232899503162658826/FB_IMG_1705492325305.jpg?ex=662b22a3&is=6629d123&hm=58e7857f74913b51fba1ba2bc1ad13a2ae6b3cb7025768e2c9fb2e0833c71b2e&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "pikir")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "pikirkan")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1235565264842526830/IMG_7634.jpg?ex=6634d552&is=663383d2&hm=4f4ae96746560dd54ad38838937d24eb26a543cbd78f209e667664bc001a8d7b&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "jawab")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "jawap")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1235811171999678484/image.png?ex=6635ba57&is=663468d7&hm=b52855257931c314486dfe33923a50c691305679499b310a2a2b9d0713a0285f&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "dapat")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1240976314060771369/FB_IMG_1715771949938.jpg?ex=664884c1&is=66473341&hm=40c7272f0bda04b879972dec4bc51ac72f85bc47fa8d74ce06a7f9e2494cd182&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "hitam")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1252856697333088286/image.png?ex=6673bd39&is=66726bb9&hm=ac177bd513adc1b3033cd126bc19c7f56cb17614d39dcfd8eb7ad91b7bb5c318&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "halah")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1252857019770081310/img_4_1715670246962.jpg?ex=6673bd86&is=66726c06&hm=3bf66904210fb2681774dd0c290315f48fb0b40bbdcbab01834048844619c28a&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "gk")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "gak")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1261288024671522836/FB_IMG_1720183590038.jpg?ex=66926982&is=66911802&hm=a9beac60473014aab9e2442effa7dbff24d892159d6dbddce86bd94c96a5cfbd&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+        if(args[0].equalsIgnoreCase(KochengController.prefix + "kadang")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "terkadang")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1262630103977037907/FB_IMG_1720887681829.jpg?ex=66974b6b&is=6695f9eb&hm=5f545aa9e9e4e306a86b40f95956cd55983a07a1ebf1c1b2d39a117d99d78a2a&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
 	}
 	
 	public void onReady(@NotNull ReadyEvent event) {
@@ -3043,7 +3199,7 @@ public class CommandList extends ListenerAdapter {
 	    // in seconds
 	    long initialDelay = durationUntilFirstLesson.getSeconds();
 
-	    // schedules the reminder at a fixed rate of one day
+	    // scheduler buat star rail
 	    ScheduledExecutorService schedulerFirstLesson = Executors.newScheduledThreadPool(1);
 	    schedulerFirstLesson.scheduleAtFixedRate(new Runnable() {
 	    	public void run() {
@@ -3064,6 +3220,35 @@ public class CommandList extends ListenerAdapter {
 		            embed.setImage("https://upload-os-bbs.hoyolab.com/upload/2023/04/17/65d6ab931ddde1095a28c2aebe3852ce_1330164747074143287.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png");
 		            
 		            guild.getTextChannelById("1101987461816655882").sendMessageEmbeds(embed.build()).queue();
+			        
+	    		} catch (Exception e) {
+	    			e.printStackTrace();
+	    		}
+		        
+	    	}
+	    }, initialDelay, 86400, TimeUnit.SECONDS);
+	    
+	    // scheduler buat zzz
+	    ScheduledExecutorService schedulerZzz = Executors.newScheduledThreadPool(1);
+	    schedulerZzz.scheduleAtFixedRate(new Runnable() {
+	    	public void run() {
+	    		try {
+			        JDA jda = event.getJDA();
+			        Guild guild = jda.getGuildById("764360360047542293");
+			        
+			        guild.getTextChannelById("1261291295004037321").sendMessage("<@&1261291389182939229>").queue();
+			        
+			        EmbedBuilder embed = new EmbedBuilder();
+			        embed.setTitle("Daily Web Login Reminder");
+			        embed.setDescription("Halo, Master Proxy! Jangan lupa log in daily di HoYoLAB ya, click linknya ***SEKARANG*** biar gak lupa:\r\n"
+			        		+ "\r\n"
+			        		+ "https://act.hoyolab.com/bbs/event/signin/zzz/e202406031448091.html?act_id=e202406031448091&hyl_auth_required=true&hyl_presentation_style=fullscreen&utm_campaign=checkin&utm_id=8&utm_medium=tools&utm_source=hoyolab&lang=en-us&bbs_theme=dark&bbs_theme_device=0\r\n");
+//			        		+ "\r\n"
+//			        		+ "Juga jangan lupa ikuti web event:\r\n"
+//			        		+ "https://t.co/lfthRhOY6j");
+		            embed.setImage("https://upload-os-bbs.hoyolab.com/upload/2024/07/02/1f1d92145428317c656def81323c9fc1_9140666359521198100.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png");
+		            
+		            guild.getTextChannelById("1261291295004037321").sendMessageEmbeds(embed.build()).queue();
 			        
 	    		} catch (Exception e) {
 	    			e.printStackTrace();
