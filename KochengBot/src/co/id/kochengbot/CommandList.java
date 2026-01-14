@@ -30,10 +30,12 @@ public class CommandList extends ListenerAdapter {
 					"50k\n"+
 					"achievement / achivmen / acivmen / acimen\n"+
 					"ada\n"+
+					"alamak\n"+
 					"alhamdulillah / alhamdulilah\n"+
 					"allahu\n"+
 					"ampas\n"+
 					"anal\n"+
+					"anda\n"+
 					"anj / anjg / ajg / anjing\n"+
 					"anjay\n"+
 					"anjim\n"+
@@ -50,17 +52,21 @@ public class CommandList extends ListenerAdapter {
 					"bagus\n"+
 					"baik\n"+
 					"baiwan / bewan / byone\n"+
+					"bakekok\n"+
 					"balon / balonku\n"+
 					"banjir / fakta / fanta\n"+
 					"banyak\n"+
+					"bapak\n"+
 					"baper / laper\n"+
 					"barbara / barabata / bandara\n"+
 					"batang\n"+
 					"benar\n"+
 					"berak / beraq\n"+
+					"berikan\n"+
 					"besok\n"+
 					"biadam\n"+
 					"biar\n"+
+					"bini\n"+
 					"bisa\n"+
 					"bismillah\n"+
 					"bobi\n"+
@@ -69,6 +75,8 @@ public class CommandList extends ListenerAdapter {
 					"bokong\n"+
 					"bomat / gapeduli\n"+
 					"bosan\n"+
+					"bukan\n"+
+					"burjo\n"+
 					"burung\n"+
 					"bye\n"+
 					"canda\n"+
@@ -98,11 +106,14 @@ public class CommandList extends ListenerAdapter {
 					"dev / fandom\n"+
 					"diem / diam\n"+
 					"dildo\n"+
+					"dingin\n"+
 					"dipikir \n"+
 					"dislike\n"+
+					"doksli\n"+
 					"dokter\n"+
 					"dompet\n"+
 					"duit / duid\n"+
+					"ea\n"+
 					"eee\n"+
 					"elit\n"+
 					"elus\n"+
@@ -115,18 +126,6 @@ public class CommandList extends ListenerAdapter {
 					"f2p\n"+
 					"faisal\n"+
 					"favorit\n"+
-					"fendet / gender\n"+
-					"fetis / fetish\n"+
-					"fubuki / fukuki / manual\n"+
-					"furry / furi\n"+
-					"gacha\n"+
-					"gaguna\n"+
-					"gakreatif\n"+
-					"gakmau / gamau\n"+
-					"gangbang\n"+
-					"gatal / gatel\n"+
-					"gay\n"+
-					"gegabah\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -140,22 +139,38 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"fendet / gender\n"+
+					"fetis / fetish\n"+
+					"fren\n"+
+					"fubuki / fukuki / manual\n"+
+					"furry / furi\n"+
+					"gacha\n"+
+					"gaguna\n"+
+					"gakreatif\n"+
+					"gakmau / gamau\n"+
+					"gangbang\n"+
+					"gatal / gatel\n"+
+					"gay\n"+
+					"gegabah\n"+
 					"geh\n"+
 					"gei\n"+
+					"gelak\n"+
 					"gem\n"+
 					"genshin\n"+
 					"gesek\n"+
 					"gila\n"+
 					"gigit\n"+
 					"gitar\n"+
-					"gk\n"+
+					"gk / gak\n"+
 					"goblog / goblok \n"+
+					"gw\n"+
 					"hadeh\n"+
 					"hak\n"+
 					"halah\n"+
 					"hamil\n"+
 					"hantu\n"+
 					"harem\n"+
+					"hargai\n"+
 					"hayo\n"+
 					"hdmi\n"+
 					"henceut\n"+
@@ -166,6 +181,7 @@ public class CommandList extends ListenerAdapter {
 					"homo\n"+
 					"homuking\n"+
 					"hooh\n"+
+					"hore\n"+
 					"horny / hirji\n"+
 					"hujat\n"+
 					"ijo\n"+
@@ -173,6 +189,7 @@ public class CommandList extends ListenerAdapter {
 					"insekyur\n"+
 					"isep\n"+
 					"istigfar / istighfar \n"+
+					"istri\n"+
 					"item\n"+
 					"iwak\n"+
 					"iya\n"+
@@ -199,24 +216,41 @@ public class CommandList extends ListenerAdapter {
 					"kawaii / kawai\n"+
 					"kaya\n"+
 					"kecewa\n"+
+					"kecil\n"+
 					"kecoa\n"+
 					"kekar\n"+
+					"kelas\n"+
+					"kelihatan / keliatan\n"+
 					"kentu\n"+
 					"keqing\n"+
 					"keren\n"+
 					"kesalahan \n"+
-					"ketar \n"+
+					"ketar\n"+
+					"ketebak\n"+
 					"ketua\n"+
 					"kihomo\n"+
 					"kimpeha\n"+
 					"khunul\n"+
 					"klee\n"+
 					"kocheng\n"+
+					"komedi\n"+
 					"konglol\n"+
 					"konjol\n"+
 					"kontol\n"+
 					"kontribusi\n"+
 					"kubus / kunus\n"+
+					"====================\n"+
+					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
+					);
+			event.getChannel().sendTyping().queue();
+			event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "list3")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setTitle("Command List Kocheng");
+			embed.setDescription(
+					"====================\n"+
 					"kuota\n"+
 					"laksek\n"+
 					"laku\n"+
@@ -235,24 +269,12 @@ public class CommandList extends ListenerAdapter {
 					"lucu\n"+
 					"lupa\n"+
 					"mabar\n"+
+					"mahkota\n"+
 					"malam / malem\n"+
 					"malas\n"+
-					"mantap\n"+
 					"masuk\n"+
 					"mati\n"+
 					"mei / mei kita / mei gue\n"+
-					"====================\n"+
-					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
-					);
-			event.getChannel().sendTyping().queue();
-			event.getChannel().sendMessageEmbeds(embed.build()).queue();
-		}
-		
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "list3")) {
-			EmbedBuilder embed = new EmbedBuilder();
-			embed.setTitle("Command List Kocheng");
-			embed.setDescription(
-					"====================\n"+
 					"melas\n"+
 					"membuahi\n"+
 					"memek\n"+
@@ -263,12 +285,14 @@ public class CommandList extends ListenerAdapter {
 					"meo / memeo\n"+
 					"miaw\n"+
 					"mindset\n"+
+					"minggir\n"+
 					"minta / bagi\n"+
 					"miskin\n"+
 					"mobil\n"+
 					"monthly\n"+
 					"monly\n"+
 					"monyet\n"+
+					"mood\n"+
 					"muak\n"+
 					"mulai\n"+
 					"murka\n"+
@@ -283,7 +307,6 @@ public class CommandList extends ListenerAdapter {
 					"ngambek \n"+
 					"ngangkang\n"+
 					"ngantuk\n"+
-					"ngemut\n"+
 					"ngentod / ngentot\n"+
 					"ngeri\n"+
 					"ngeyel\n"+
@@ -312,6 +335,7 @@ public class CommandList extends ListenerAdapter {
 					"pendek\n"+
 					"pendidikan\n"+
 					"penis\n"+
+					"pensiun / pensiunan / pensi\n"+
 					"pepek\n"+
 					"percaya\n"+
 					"pergi\n"+
@@ -323,15 +347,29 @@ public class CommandList extends ListenerAdapter {
 					"pride\n"+
 					"prinsip\n"+
 					"ps5\n"+
-					"psikopat / psokopay"+
-					"pukul / berani\n"+
+					"psikopat / psokopaypukul / berani\n"+
 					"qiqi\n"+
 					"rapsodi\n"+
+					"====================\n"+
+					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
+					);
+		event.getChannel().sendTyping().queue();
+		event.getChannel().sendMessageEmbeds(embed.build()).queue();
+		}
+		
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "list4")) {
+			EmbedBuilder embed = new EmbedBuilder();
+			embed.setTitle("Command List Kocheng");
+			embed.setDescription(
+					"====================\n"+
 					"rasakan\n"+
+					"reaksi\n"+
 					"rehab / rehabilitas / rebihalitas\n"+
 					"retry / tetty\n"+
 					"ribut / ribiw\n"+
 					"rog\n"+
+					"rokok\n"+
+					"sahabat\n"+
 					"salam\n"+
 					"salto\n"+
 					"sange / sangean\n"+
@@ -349,25 +387,15 @@ public class CommandList extends ListenerAdapter {
 					"sepuh\n"+
 					"sesat\n"+
 					"shap / siap\n"+
+					"siang\n"+
 					"sipaling\n"+
+					"sirkel\n"+
 					"skill\n"+
 					"slow\n"+
 					"smash / semes / smesh\n"+
 					"sodok\n"+
 					"sopan\n"+
 					"sore\n"+
-					"====================\n"+
-					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
-					);
-		event.getChannel().sendTyping().queue();
-		event.getChannel().sendMessageEmbeds(embed.build()).queue();
-		}
-		
-		if(args[0].equalsIgnoreCase(KochengController.prefix + "list4")) {
-			EmbedBuilder embed = new EmbedBuilder();
-			embed.setTitle("Command List Kocheng");
-			embed.setDescription(
-					"====================\n"+
 					"ss\n"+
 					"sulit\n"+
 					"summon / cium\n"+
@@ -401,13 +429,17 @@ public class CommandList extends ListenerAdapter {
 					"tumdur / bobo\n"+
 					"tusbol\n"+
 					"tusuk\n"+
+					"tutup\n"+
 					"ty / thx / thanks\n"+
 					"typo / tipo\n"+
 					"udah\n"+
 					"umam\n"+
+					"umazing\n"+
 					"update\n"+
 					"valid\n"+
 					"waduh\n"+
+					"waktu\n"+
+					"wareg\n"+
 					"wawasan\n"+
 					"welcome\n"+
 					"wibu\n"+
@@ -2857,7 +2889,7 @@ public class CommandList extends ListenerAdapter {
         }
         if(args[0].equalsIgnoreCase(KochengController.prefix + "otw")) {
             EmbedBuilder embed = new EmbedBuilder();
-            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1119425469486477402/FB_IMG_1686903054618.jpg");
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1369235879016529951/FB_IMG_1732005085801.jpg?ex=6968ab48&is=696759c8&hm=73e2c4f03555550182fade1ca8348c7016100349b180f4bcb2cd0b6c45aa349e&");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
@@ -3111,7 +3143,7 @@ public class CommandList extends ListenerAdapter {
         }
         if(args[0].equalsIgnoreCase(KochengController.prefix + "karbit")) {
             EmbedBuilder embed = new EmbedBuilder();
-            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1232653759436296252/FB_IMG_1713378933611.jpg?ex=662a3dc5&is=6628ec45&hm=356209bb433dd06eb7fbab7da1a5c75a7a84fdd851597f2fddd78668c1a9c652&");
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1372160566826766347/rsz_162d05b109c72c7aa19d832dce40fd322.png?ex=69681a5c&is=6966c8dc&hm=0f6ce768d99ea540699d13a2112dc4e98a77c4e36e1d357d51d0425d4650681b&");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
@@ -3180,6 +3212,254 @@ public class CommandList extends ListenerAdapter {
         		|| args[0].equalsIgnoreCase(KochengController.prefix + "terkadang")) {
             EmbedBuilder embed = new EmbedBuilder();
             embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1262630103977037907/FB_IMG_1720887681829.jpg?ex=66974b6b&is=6695f9eb&hm=5f545aa9e9e4e306a86b40f95956cd55983a07a1ebf1c1b2d39a117d99d78a2a&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "burjo")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1280139088317517845/Screenshot_2024-08-30-08-46-21-523_com.discord-edit.jpg?ex=696831ae&is=6966e02e&hm=42f47e0a8bb1aedb826401d5a18b62bd1a4d525b0da41a06a6c3ea439f19903d&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "mahkota")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1285471816776679545/FB_IMG_1726339755710.jpg?ex=69687a6c&is=696728ec&hm=3f67a175ea15ba74d751ff5c61d74e08c177209736cd1c4b2464486c9d6bfea0&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "tutup")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1285471817112490035/FB_IMG_1726151786586.jpg?ex=69687a6c&is=696728ec&hm=249d3f3184495a5f1fe187a8f254203d6853770324b55729ec5108e11965c35f&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sirkel")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1289096315401408513/FB_IMG_1727232059333-1.jpg?ex=69687aff&is=6967297f&hm=cc341e266e7f387d0a7c1997f8370597bdbfffbde6dd2d8ccc3a9e2cc3116a3e&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "berikan")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1290211488430166081/FB_IMG_1727678789552.jpg?ex=69689515&is=69674395&hm=70107b50bf7fcbc572b1850eb44b0ac4a60c1dff9e195167f640345913f39fa7&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kelihatan")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "keliatan")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1290571976880164915/IMG_20240818_235716.jpg?ex=69689350&is=696741d0&hm=535f0245d87cbce8301f63c87fee083c6be41c8dcb590c5f982ae96c6dcf5729&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "bukan")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1293142675574227025/Untitled.png?ex=6968b2f7&is=69676177&hm=0d22497a31bb2d9ffc12e7e15b142876a79ff6bdb745a811b2d1ae7a29ba5c43&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "reaksi")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1301166965309706310/image_2.png?ex=69683a6b&is=6966e8eb&hm=0f51a1a0a2971661ef2805cabb4a39056de205090367f92170c997555a655db0&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gelak")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1303249047594991647/FB_IMG_1727417448420.jpg?ex=69688d42&is=69673bc2&hm=66ccc7b84054291d7b23296dfd818fcfac96c71d46c9786896aaf212fa0c0564&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "rokok")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1308375217755918366/temp_Screenshot_20241119-171157.jpg?ex=696815a0&is=6966c420&hm=98d9a8eb20560c64eb9fcd0abf42c21fc2731c06e3c5f00e2fe991db7c6112a5&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "bapak")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1315649860443308113/FB_IMG_1733722815744.jpg?ex=69682eaa&is=6966dd2a&hm=9dee51c61081ce69eb25736993cc2c0cd197c138577d5c08658f1f381c1a38bf&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "fren")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1325700941223301223/image0.jpg?ex=69687e36&is=69672cb6&hm=034c24ba4d5c397abfda27a7a0280a70973ba6a65adad186c35f55f63b4ce481&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "gw")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1325736498120622120/ini_sangat_menggambarkan.jpg?ex=69689f54&is=69674dd4&hm=f2c14e153428ef13acb6d39f3bc01c570a5e5010d0edbea3210238a03e93043d&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "mood")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1339828976029274193/Screenshot_20250213_215614_Discord.jpg?ex=69687978&is=696727f8&hm=62d8794f9494dfbf1ff7eee6290586ae54aff2b7c93ad4f98c683b0d3094779c&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "pensiun")
+        		|| args[0].equalsIgnoreCase(KochengController.prefix + "pensiunan")
+				|| args[0].equalsIgnoreCase(KochengController.prefix + "pensi")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1339828986947043389/DB6A8EB5-25DF-41B3-8A35-6DA42BB53743.png?ex=6968797b&is=696727fb&hm=8e8a98393eabd5a109664fc2da2c0a34fb02f2e018a5429779dae5c27d28df98&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "minggir")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1341732591950233661/FB_IMG_1739712821116.jpg?ex=6968261a&is=6966d49a&hm=b5e5846fc606cd01d296e12af798fb05fc587bf1778fcf8f0d22f42b122eb647&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "dingin")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1344905127861157970/20250228_103119.jpg?ex=69687c01&is=69672a81&hm=6d258803fdcb25a57dad6d5e4ddbd219cdd31aa5105d887bb20eead411a37fa0&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hargai")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1351817087538040862/FB_IMG_1742364943021.jpg?ex=696894c5&is=69674345&hm=a05527a6b01ff5a4a372ce3a9d21ec2dcdd7210080e4bdbd84528cc295d51f01&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "istri")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1351817103996354591/FB_IMG_1742338814681.jpg?ex=696894c9&is=69674349&hm=8c6d4e754b606170738a04911ea100fb60a0063c3582dcd99fd9b2715d1fee41&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "sahabat")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1359793897961951322/image0.jpg?ex=696898c1&is=69674741&hm=5eb149aff409fb83b27f875d38bfb32f47bb64c80d0d6bd616107d4fa8eab93f&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "alamak")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1359794275516420259/images.jpeg?ex=6968991b&is=6967479b&hm=6ee1a5bc861061e57a1aa9585f2938d8270a954d3e7bfe932a29f7f735cfe3e6&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kelas")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1359794544379433083/Untitled.png?ex=6968995b&is=696747db&hm=c9063d1d99e1c931b20ca462433c6acd89ea7773f2bd6a3208a48d767101c02f&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "siang")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1373922387900497970/Screenshot_2025-05-16-15-43-30-544_com.discord.png?ex=6968946f&is=696742ef&hm=4639b017b7b24f191e56bf3fcb5696834e3e89166dadb2433feacca61d83a5c0&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "bini")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1376510439038648430/FB_IMG_1748149421952.jpg?ex=69681b7e&is=6966c9fe&hm=69492f84d13ea68c887ca758480f9cc11477174af8bf38606df7326bd40ceb87&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "waktu")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1376807093561987113/image.png?ex=69688706&is=69673586&hm=b2dd871ad0314c2235a896a463bd282f44f3daf6f3bfab048ef5bfb2d2ce5099&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "doksli")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1384385972703072409/FB_IMG_1749802381587.jpg?ex=696869e8&is=69671868&hm=1b82573b22c3a1bf2a00921350845a4605825fdd3477d7c2cadf150d02905dd1&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "anda")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1384385986494074960/FB_IMG_1750003311618.jpg?ex=696869eb&is=6967186b&hm=fd493c150515cf379d088c764d5c789cec7b85bc4b19c732686b52fe7b27e564&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ea")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1399242483392839772/image.png?ex=6968689c&is=6967171c&hm=bf14f4507fde2a3251f9f13e1056baa7b259d8df09b374700d952d3986488ecb&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "wareg")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1399242766223147148/image.png?ex=696868e0&is=69671760&hm=2cf009528bf5bc42a48bc808e07f7ef5faa142e29669c20ff0523f135eea0d51&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "umazing")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1399356769758875734/image.png?ex=69682a4c&is=6966d8cc&hm=7b54636052566d27bc9348e3e379bc5da45cc61e62a72611100de30d7466ce0c&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "bakekok")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1406288695522496713/image0.gif?ex=696855a8&is=69670428&hm=5d5aa168060453e1f0c30319820c5c5b0f23324ea8f587d208cef6991f490b85&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "hore")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1410472316801912954/hore.gif?ex=696864b5&is=69671335&hm=d33dd4e21c2e46d10ede04521f7994534135680a684be8e44a159fbcc9bdff81&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "ketebak")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1419994548683145257/image0.jpg?ex=6968193a&is=6966c7ba&hm=c6c9685d82036dda47751ed88949f0a5e5cacb15a629579adab85c1a7ff35ac2&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "komedi")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1430126545414131794/IMG_20251021_083947_437.jpg?ex=69680b62&is=6966b9e2&hm=82d79a21d0f5cd626ce5e505d349e6bcbb6916a1ee6c0a97277369c5b1aa1632&");
+            
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessageEmbeds(embed.build()).queue();
+        }
+		if(args[0].equalsIgnoreCase(KochengController.prefix + "kecil")) {
+            EmbedBuilder embed = new EmbedBuilder();
+            embed.setImage("https://cdn.discordapp.com/attachments/812956551320043523/1461001656194826363/image_2.png?ex=6968f752&is=6967a5d2&hm=0863f9ab8e3fa8e40d1a01ad3151d646cbf5df7a89b133579a75c830d56bac2b&");
             
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessageEmbeds(embed.build()).queue();
