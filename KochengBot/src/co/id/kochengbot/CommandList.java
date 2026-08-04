@@ -511,6 +511,7 @@ public class CommandList extends ListenerAdapter {
         IMAGE_COMMANDS.put("komedi", "https://cdn.discordapp.com/attachments/812956551320043523/1430126545414131794/IMG_20251021_083947_437.jpg?ex=69680b62&is=6966b9e2&hm=82d79a21d0f5cd626ce5e505d349e6bcbb6916a1ee6c0a97277369c5b1aa1632&");
         IMAGE_COMMANDS.put("kecil", "https://cdn.discordapp.com/attachments/812956551320043523/1461001656194826363/image_2.png?ex=6968f752&is=6967a5d2&hm=0863f9ab8e3fa8e40d1a01ad3151d646cbf5df7a89b133579a75c830d56bac2b&");
         IMAGE_COMMANDS.put("sahur", "https://cdn.discordapp.com/attachments/812956551320043523/1488887401727131769/received_2064093094380697.png?ex=69ce69f2&is=69cd1872&hm=4ee057c7d0192dd401f8ab5cc712428e48f66033b4770c267782b57bb9e0d78d");
+        IMAGE_COMMANDS.put("merenung", "https://cdn.discordapp.com/attachments/812956551320043523/1534178240049053696/FB_IMG_1785655969537.jpg?ex=6a732e54&is=6a71dcd4&hm=aa82764153fac13803b4e8642475f9c0ee726d0850b387dad126b8507908d0a0");
 
         MULTI_IMAGE_COMMANDS.put("bacot", Arrays.asList("https://cdn.discordapp.com/attachments/812956551320043523/812957291908562944/bacot.jpg", "https://cdn.discordapp.com/attachments/812956551320043523/812957290881482782/bacot_2.jpg"));
         MULTI_IMAGE_COMMANDS.put("bavot", Arrays.asList("https://cdn.discordapp.com/attachments/812956551320043523/812957291908562944/bacot.jpg", "https://cdn.discordapp.com/attachments/812956551320043523/812957290881482782/bacot_2.jpg"));
@@ -837,6 +838,7 @@ public class CommandList extends ListenerAdapter {
 					"mention\n"+
 					"menyesal \n"+
 					"meo / memeo\n"+
+					"merenung\n"+
 					"miaw\n"+
 					"mindset\n"+
 					"minggir\n"+
@@ -903,7 +905,6 @@ public class CommandList extends ListenerAdapter {
 					"ps5\n"+
 					"psikopat / psokopaypukul / berani\n"+
 					"qiqi\n"+
-					"rapsodi\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
 					);
@@ -916,6 +917,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"rapsodi\n"+
 					"rasakan\n"+
 					"reaksi\n"+
 					"rehab / rehabilitas / rebihalitas\n"+
