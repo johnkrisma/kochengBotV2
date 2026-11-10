@@ -512,6 +512,8 @@ public class CommandList extends ListenerAdapter {
         IMAGE_COMMANDS.put("kecil", "https://cdn.discordapp.com/attachments/812956551320043523/1461001656194826363/image_2.png?ex=6968f752&is=6967a5d2&hm=0863f9ab8e3fa8e40d1a01ad3151d646cbf5df7a89b133579a75c830d56bac2b&");
         IMAGE_COMMANDS.put("sahur", "https://cdn.discordapp.com/attachments/812956551320043523/1488887401727131769/received_2064093094380697.png?ex=69ce69f2&is=69cd1872&hm=4ee057c7d0192dd401f8ab5cc712428e48f66033b4770c267782b57bb9e0d78d");
         IMAGE_COMMANDS.put("merenung", "https://cdn.discordapp.com/attachments/812956551320043523/1534178240049053696/FB_IMG_1785655969537.jpg?ex=6a732e54&is=6a71dcd4&hm=aa82764153fac13803b4e8642475f9c0ee726d0850b387dad126b8507908d0a0");
+        IMAGE_COMMANDS.put("gpp", "https://cdn.discordapp.com/attachments/812956551320043523/1542062781078179850/FB_IMG_1787722316580.jpg?ex=6a8fdd61&is=6a8e8be1&hm=96b7cc826fdc92ac46c3bb29a1670d3c6b6e7aa063e23ed49321b81f792a930e");
+        IMAGE_COMMANDS.put("boleh", "https://cdn.discordapp.com/attachments/812956551320043523/1567387237816205453/boleh.png?ex=6aebfe9e&is=6aeaad1e&hm=1344e8f01a186e72adec3d880b0aee5ced822cab0600d78750b96e15ad2fd857");
 
         MULTI_IMAGE_COMMANDS.put("bacot", Arrays.asList("https://cdn.discordapp.com/attachments/812956551320043523/812957291908562944/bacot.jpg", "https://cdn.discordapp.com/attachments/812956551320043523/812957290881482782/bacot_2.jpg"));
         MULTI_IMAGE_COMMANDS.put("bavot", Arrays.asList("https://cdn.discordapp.com/attachments/812956551320043523/812957291908562944/bacot.jpg", "https://cdn.discordapp.com/attachments/812956551320043523/812957290881482782/bacot_2.jpg"));
@@ -628,6 +630,7 @@ public class CommandList extends ListenerAdapter {
 					"bohong\n"+
 					"bokep / bocil\n"+
 					"bokong\n"+
+					"boleh\n"+
 					"bomat / gapeduli\n"+
 					"bosan\n"+
 					"bukan\n"+
@@ -680,7 +683,6 @@ public class CommandList extends ListenerAdapter {
 					"ewe / eue\n"+
 					"f2p\n"+
 					"faisal\n"+
-					"favorit\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list2 untuk melihat command selanjutnya\n"
 					);
@@ -694,6 +696,7 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"favorit\n"+
 					"fendet / gender\n"+
 					"fetis / fetish\n"+
 					"fren\n"+
@@ -718,6 +721,7 @@ public class CommandList extends ListenerAdapter {
 					"gitar\n"+
 					"gk / gak\n"+
 					"goblog / goblok \n"+
+					"gpp\n"+
 					"gw\n"+
 					"hadeh\n"+
 					"hak\n"+
@@ -792,8 +796,6 @@ public class CommandList extends ListenerAdapter {
 					"konglol\n"+
 					"konjol\n"+
 					"kontol\n"+
-					"kontribusi\n"+
-					"kubus / kunus\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list3 untuk melihat command selanjutnya\n"
 					);
@@ -806,6 +808,8 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"kontribusi\n"+
+					"kubus / kunus\n"+
 					"kuota\n"+
 					"laksek\n"+
 					"laku\n"+
@@ -903,8 +907,6 @@ public class CommandList extends ListenerAdapter {
 					"pride\n"+
 					"prinsip\n"+
 					"ps5\n"+
-					"psikopat / psokopaypukul / berani\n"+
-					"qiqi\n"+
 					"====================\n"+
 					"Ketik "+KochengController.prefix+"list4 untuk melihat command selanjutnya\n"
 					);
@@ -917,6 +919,9 @@ public class CommandList extends ListenerAdapter {
 			embed.setTitle("Command List Kocheng");
 			embed.setDescription(
 					"====================\n"+
+					"psikopat / psokopay\n"+
+					"pukul / berani\n"+
+					"qiqi\n"+
 					"rapsodi\n"+
 					"rasakan\n"+
 					"reaksi\n"+
